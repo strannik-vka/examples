@@ -1,0 +1,51 @@
+.take-card {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    // border-left: 0.0625rem solid rgba(var(--dark-blue-rgb), 0.2);
+    padding-left: 1.5625rem;
+    padding-bottom: 1.0625rem;
+    @media (min-width: 1200px) {
+        padding-left: 2.8125rem;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 0.0625rem;
+        height: calc(100% - 35%);
+        background-color: rgba(var(--dark-blue-rgb), 0.2);
+    }
+    &-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 3.125rem;
+        height: 3.125rem;
+        background-color: var(--white);
+        border-radius: 0;
+        & svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            object-fit: contain;
+        }
+    }
+    &-description {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 200%;
+        padding-top: 1.5625rem;
+        @media (min-width: 1200px) {
+            font-size: 0.875rem;
+            line-height: 171%;
+        }
+    }
+}

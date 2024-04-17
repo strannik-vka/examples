@@ -1,0 +1,14 @@
+.valuation-card {
+    position: relative;
+    z-index: 1;
+    display: block;
+    &-content {
+        display: block;
+    }
+    &-comments {
+        & > .row {
+            --bs-gutter-x: 0.5rem;
+            --bs-gutter-y: 0.5rem;
+        }
+    }
+}

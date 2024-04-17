@@ -1,0 +1,134 @@
+:root {
+    --bs-modal-bg: rgba(var(--white-rgb), 1);
+    --bs-modal-backdrop-bg: rgba(var(--black-rgb), 0.75);
+    --bs-modal-border-radius: 0;
+    --bs-modal-padding-y: 0.938rem;
+    --bs-modal-padding-x: 0.938rem;
+    --bs-modal-body-padding: var(--bs-modal-body-padding-y) var(--bs-modal-body-padding-x);
+    --bs-modal-body-padding-y: 1.5625rem;
+    --bs-modal-body-padding-x: 0;
+    --modal-font-size: 0.875rem;
+    --modal-line-height: 120%;
+    --modal-footer-font-size: 0.75rem;
+    --modal-footer-line-height: 120%;
+    --bs-modal-zindex: 1050;
+}
+
+.modal {
+    position: fixed;
+    background-color: var(--bs-modal-backdrop-bg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: var(--bs-modal-zindex);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: all;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition:
+        opacity 0.4s ease-in-out,
+        visibility 0.4s ease-in-out;
+    &-is {
+        &-open {
+            position: static;
+            touch-action: none;
+            overflow: hidden;
+        }
+    }
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    &-dialog {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        margin: auto;
+        @media (min-width: 576px) {
+            min-width: 100%;
+        }
+    }
+    &-body {
+        font-size: var(--modal-font-size);
+        line-height: var(--modal-line-height);
+        padding: var(--bs-modal-body-padding-y) 0;
+        flex: 1;
+    }
+    &-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        padding: var(--bs-modal-padding-y) var(--bs-modal-padding-x);
+        border-radius: var(--bs-modal-border-radius);
+        background: var(--bs-modal-bg);
+        max-width: 100%;
+        min-width: 18.75rem;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        @media (min-width: 768px) {
+            max-width: 40rem;
+        }
+    }
+    &-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-footer {
+        font-size: var(--modal-footer-font-size);
+        line-height: var(--modal-footer-line-height);
+    }
+    &-title {
+        font-family: "Normalidad";
+        text-align: center;
+    }
+    &-close {
+        position: absolute;
+        top: 1.125rem;
+        right: 1rem;
+        --bs-btn-padding-x: 0.125rem;
+        --bs-btn-padding-y: 0.125rem;
+        --bs-modal-close-w: 2.5rem;
+        --bs-modal-close-h: 2.5rem;
+        --bs-modal-close-bg-color: transparent;
+        --bs-modal-close-image: url("data:image/svg+xml,%3Csvg width='31' height='31' viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.3284 17.6214L17.6213 18.3285L28.935 29.6422L29.6421 28.9351L18.3284 17.6214ZM13.3787 18.3285L12.6716 17.6214L0.650743 29.6422L1.35785 30.3493L13.3787 18.3285ZM12.6716 13.3788L13.3787 12.6717L2.06496 1.35796L1.35785 2.06506L12.6716 13.3788ZM30.3492 1.35796L18.3284 13.3788L17.6213 12.6717L29.6421 0.650849L30.3492 1.35796Z' fill='%23222222'/%3E%3C/svg%3E%0A");
+        appearance: none;
+        border: none;
+        outline: none;
+        width: var(--bs-modal-close-w);
+        height: var(--bs-modal-close-h);
+        background-color: var(--bs-modal-close-bg-color);
+        background-image: var(--bs-modal-close-image);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        cursor: pointer;
+        user-select: none;
+        transform: rotate(0deg);
+        transform-origin: center;
+        transition: transform 0.4s ease;
+    }
+    &-notify {
+        & .modal-content {
+            max-width: 20.625rem;
+            min-width: unset;
+            width: 100%;
+            @media (min-width: 576px) {
+                max-width: 18.75rem;
+            }
+        }
+    }
+}

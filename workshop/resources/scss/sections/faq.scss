@@ -1,0 +1,54 @@
+:root {
+    --section-faq-padding-x: 0;
+    --section-faq-padding-y: 1.563rem;
+    @media (min-width: 768px) {
+        --section-faq-padding-y: 7.5rem;
+    }
+}
+
+.section {
+    &-faq {
+        position: relative;
+        z-index: 1;
+        display: block;
+        background: var(--white);
+        padding: var(--section-faq-padding-y) var(--section-faq-padding-x) calc(var(--section-faq-padding-y) * 1.5);
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            row-gap: 3.125rem;
+            column-gap: 3.125rem;
+            @media (min-width: 768px) {
+                row-gap: 5rem;
+                column-gap: 5rem;
+            }
+        }
+        &-cards {
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.625rem;
+            column-gap: 0.625rem;
+            @media (min-width: 768px) {
+                row-gap: 3.75rem;
+                column-gap: 3.75rem;
+            }
+            & ul {
+                padding-left: 0;
+                list-style-type: "·";
+                & li {
+                    margin: 1.25rem;
+                    padding: 0 0 0 0.5rem;
+                }
+                & a {
+                    color: rgba(var(--grey-500-rgb), 1);
+                    text-decoration: underline;
+                    text-underline-offset: 0.25rem;
+                }
+            }
+        }
+        &-button {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

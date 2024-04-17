@@ -1,0 +1,79 @@
+.nominees-item,
+a.nominees-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    @media (max-width: 767px) {
+        padding: 2.5rem 0;
+    }
+    &:nth-child(2n - 1) {
+        background-color: var(--white);
+    }
+    &-number {
+        font-weight: bold;
+        color: rgba(var(--dark-blue-rgb), 0.7);
+        padding-right: 1.5625rem;
+        padding-left: 1.5625rem;
+        @media (max-width: 767px) {
+            padding-right: 0.625rem;
+            padding-left: 0.625rem;
+        }
+    }
+    &-title {
+        cursor: pointer;
+        padding-right: 1.5625rem;
+        padding-left: 1.5625rem;
+        text-decoration-line: underline;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: rgba(var(--dark-blue-rgb), 0.7);
+        margin-left: 0;
+        margin-right: auto;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem;
+        overflow: hidden;
+    }
+    &-eval {
+        font-weight: bold;
+        text-align: center;
+        color: var(--green-pressed);
+        text-decoration: none !important;
+        padding-right: 1.5625rem;
+        padding-left: 1.5625rem;
+        @media (max-width: 767px) {
+            padding-right: 0.625rem;
+            padding-left: 0.625rem;
+        }
+    }
+    &-score {
+        font-weight: bold;
+        text-align: center;
+        color: var(--green-pressed);
+        text-decoration: none !important;
+        padding-right: 1.5625rem;
+        padding-left: 1.5625rem;
+        @media (max-width: 767px) {
+            padding-right: 0.625rem;
+            padding-left: 0.625rem;
+        }
+    }
+    &:hover {
+        text-decoration: none !important;
+        & .nominees-item-number,
+        & .nominees-item-title,
+        & .nominees-item-eval,
+        & .nominees-item-nomination,
+        & .nominees-item-score,
+        & .nominees-item-comment {
+            text-decoration: none !important;
+        }
+    }
+}

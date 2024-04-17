@@ -1,0 +1,102 @@
+// vendor
+@import "swiper/css/bundle";
+
+@import "../sections/section-expert.scss";
+@import "../sections/section-open.scss";
+@import "../sections/section-matches.scss";
+// import "../sections/section-mentors.scss";
+@import "../sections/section-take.scss";
+@import "../sections/section-winners.scss";
+
+.section-main {
+    --section-padding-top: 4.0625rem;
+    --section-padding-bottom: 6.25rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100svh;
+    min-height: 100vh;
+    padding: calc(var(--section-padding-top) / 5) 0 var(--section-padding-bottom);
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --section-padding-top: 7.5rem;
+        --section-padding-bottom: 9.5rem;
+    }
+    @media (min-width: 1200px) {
+        --section-padding-top: 8.125rem;
+        --section-padding-bottom: 10rem;
+    }
+    &-inner {
+        position: relative;
+        z-index: 1;
+        display: block;
+    }
+    &-description {
+        padding-top: 1.5625rem;
+        @media (min-width: 1200px) {
+            padding-top: 2.1875rem;
+        }
+    }
+    &-callback {
+        padding-top: 2.1875rem;
+        @media (min-width: 768px) {
+            padding-top: 3.125rem;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 3.75rem;
+        }
+    }
+    &-background {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 20.875rem;
+        height: 28.3635rem;
+        transform: translate(0, 0);
+        @media (min-width: 768px) {
+            width: 28rem;
+            height: 38.25rem;
+        }
+        @media (min-width: 992px) {
+            width: 29rem;
+            height: 45rem;
+        }
+        @media (min-width: 1200px) {
+            right: 1.5rem;
+            width: 39.375rem;
+            height: 53.5rem;
+            transform: translate(0, calc(var(--section-padding-bottom) / 1.25));
+        }
+        &-container {
+            position: absolute;
+            width: 100%;
+            height: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.section-matches {
+    --bs-section-padding: 6.875rem;
+    padding: var(--bs-section-padding) 0 0;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 10rem;
+    }
+}
+
+.section-take {
+    background: var(--green);
+}

@@ -1,0 +1,128 @@
+.opinion-card {
+    display: block;
+    width: 15rem;
+    height: 100%;
+    @media (min-width: 768px) {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    &-wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 15rem;
+        height: 100%;
+        @media (min-width: 768px) {
+            width: 41.4375rem;
+            height: auto;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: stretch;
+        }
+    }
+    &-header {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 13.75rem;
+        background-color: var(--green);
+        @media (min-width: 768px) {
+            width: 16.25rem;
+            height: 26.625rem;
+        }
+    }
+    &-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        pointer-events: all;
+    }
+    &-media {
+        & img,
+        & iframe,
+        & image,
+        & picture,
+        & media,
+        & source,
+        & video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+    }
+    &-social {
+        position: absolute;
+        top: 0.81rem;
+        right: 1.13rem;
+        z-index: 1;
+        transform: translate(0, 0);
+        @media (min-width: 768px) {
+            top: unset;
+            bottom: 1.44rem;
+            right: 2.19rem;
+        }
+    }
+    &-content {
+        --card-content-padding-y: 0.94rem;
+        --card-content-padding-x: 0.94rem;
+        --card-content-width: 100%;
+        --card-content-height: 20rem;
+        --card-content-font-size: 1rem;
+        --card-content-font-weight: 400;
+        --card-content-line-height: 1.5rem;
+        position: relative;
+        z-index: 2;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        width: var(--card-content-width);
+        height: var(--card-content-height);
+        padding: var(--card-content-padding-y) var(--card-content-padding-x)
+            calc(var(--card-content-padding-y) + 0.68rem);
+        font-size: var(--card-content-font-size);
+        font-style: normal;
+        font-weight: var(--card-content-font-weight);
+        line-height: var(--card-content-line-height);
+        background-color: var(--yellow);
+        user-select: none;
+        @media (min-width: 768px) {
+            --card-content-padding-y: 2.19rem;
+            --card-content-padding-x: 2.19rem;
+            --card-content-width: 20.6875rem;
+            flex: 1;
+            padding: var(--card-content-padding-y) var(--card-content-padding-x)
+                calc(var(--card-content-padding-y) - 0.44rem);
+            margin-right: -3rem;
+        }
+    }
+    &-description {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        animation: welcome 2s ease;
+        transition: 0.4s ease;
+    }
+    &-caption {
+        margin-top: auto;
+        padding-top: 0.94rem;
+        @media (min-width: 768px) {
+            padding-top: 1.35rem;
+        }
+        @media (min-width: 992px) {
+            padding-top: 2.19rem;
+        }
+    }
+}

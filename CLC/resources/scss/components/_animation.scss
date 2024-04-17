@@ -1,0 +1,232 @@
+@keyframes switchToYellow {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 0% 33.333333%;
+    }
+}
+
+@keyframes switchToGreen {
+    0% {
+        background-position: 0% 33.333333%;
+    }
+    100% {
+        background-position: 0% 66.666666%;
+    }
+}
+
+@keyframes switchToGrey {
+    0% {
+        background-position: 0% 66.666666%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes showFigure {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    95% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes hideScreensaver {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+        visibility: visible;
+    }
+}
+
+.infiniteRotation {
+    animation-name: infiniteRotation;
+    animation-duration: 40s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(0deg);
+}
+
+@keyframes infiniteRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.infiniteStepRotation {
+    animation: infiniteStepRotation steps(5) infinite 15s;
+    transform: rotate(0deg);
+}
+
+@keyframes infiniteStepRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(135deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes welcome {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes welcomeText {
+    from {
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        overflow: hidden;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.animatedElem {
+    position: relative;
+    overflow: hidden;
+    & > * {
+        animation-name: animatedElem;
+        animation-duration: 1s;
+        animation-delay: 4.25s;
+        animation-direction: normal;
+        animation-fill-mode: both;
+        animation-timing-function: ease;
+        position: absolute;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animatedElem {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes runXs {
+    0% {
+        background-position-y: 5.25rem;
+    }
+    100% {
+        background-position-y: -173.375rem;
+    }
+}
+
+@keyframes runMd {
+    0% {
+        background-position-y: 9.5rem;
+    }
+    100% {
+        background-position-y: -166.5625rem;
+    }
+}
+
+@keyframes runXl {
+    0% {
+        background-position-y: 9.5rem;
+    }
+    100% {
+        background-position-y: -278.6875rem;
+    }
+}
+
+@keyframes rotateXs {
+    0% {
+        background-position-y: 0.875rem;
+    }
+    100% {
+        background-position-y: -77.625rem;
+    }
+}
+
+@keyframes rotateMd {
+    0% {
+        background-position-y: 3.375rem;
+    }
+    100% {
+        background-position-y: -71.5rem;
+    }
+}
+
+@keyframes rotateXl {
+    0% {
+        background-position-y: -0.375rem;
+    }
+    100% {
+        background-position-y: -119.125rem;
+    }
+}
+
+@keyframes poll-error {
+    0% {
+        transform: translateX(0px);
+        timing-function: ease-in;
+    }
+    37% {
+        transform: translateX(5px);
+        timing-function: ease-out;
+    }
+    55% {
+        transform: translateX(-5px);
+        timing-function: ease-in;
+    }
+    73% {
+        transform: translateX(4px);
+        timing-function: ease-out;
+    }
+    82% {
+        transform: translateX(-4px);
+        timing-function: ease-in;
+    }
+    91% {
+        transform: translateX(2px);
+        timing-function: ease-out;
+    }
+    96% {
+        transform: translateX(-2px);
+        timing-function: ease-in;
+    }
+    100% {
+        transform: translateX(0px);
+        timing-function: ease-in;
+    }
+}

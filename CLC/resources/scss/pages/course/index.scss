@@ -1,0 +1,159 @@
+// vendor
+@import "swiper/css/bundle";
+
+// sections
+@import "../../sections/section-graphic.scss";
+@import "../../sections/section-expert.scss";
+@import "../../sections/section-open.scss";
+@import "../../sections/section-program.scss";
+@import "../../sections/section-mentors.scss";
+
+// parts
+@import "./parts/ability-list.scss";
+@import "./parts/matches-list.scss";
+@import "../../parts/take-card.scss";
+
+.content {
+    & .section-content {
+        &:not(:last-of-type),
+        &:not(.section-open) {
+            &:nth-child(n + 2) {
+                padding-top: calc(var(--bs-section-padding) * 0);
+                padding-top: calc(var(--bs-section-padding-top) * 0);
+            }
+        }
+    }
+}
+
+.section-main {
+    --section-padding-top: 4.0625rem;
+    --section-padding-bottom: 6.25rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100svh;
+    // min-height: 41.5625rem;
+    padding: calc(var(--section-padding-top) / 5) 0 var(--section-padding-bottom);
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --section-padding-top: 7.5rem;
+        --section-padding-bottom: 9.5rem;
+    }
+    @media (min-width: 1200px) {
+        --section-padding-top: 8.125rem;
+        --section-padding-bottom: 10rem;
+    }
+    &-inner {
+        position: relative;
+        z-index: 1;
+        display: block;
+    }
+    &-description {
+        padding-top: 1.5625rem;
+        @media (min-width: 1200px) {
+            padding-top: 2.1875rem;
+        }
+    }
+    &-callback {
+        padding-top: 2.1875rem;
+        @media (min-width: 768px) {
+            padding-top: 3.125rem;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 3.75rem;
+        }
+    }
+    &-background {
+        position: absolute;
+        top: 0;
+        bottom: auto;
+        right: 0;
+        z-index: 0;
+        width: 6.75rem;
+        height: 6.75rem;
+        transform: translate(0, -50%);
+        @media (min-width: 768px) {
+            top: 50%;
+            width: 20rem;
+            height: 20rem;
+            transform: translate(0, -50%);
+        }
+        @media (min-width: 1200px) {
+            width: 41.62456rem;
+            height: 30.635rem;
+        }
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.section-matches {
+    --bs-section-padding: 6.875rem;
+    position: relative;
+    z-index: 1;
+    padding: var(--bs-section-padding) 0;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 10rem;
+    }
+    &-inner {
+        & > .row {
+            --bs-gutter-y: 1.5rem;
+            @media (min-width: 1200px) {
+                --bs-gutter-x: 5.25rem;
+            }
+        }
+    }
+    &-primary {
+        display: block;
+        height: 100%;
+        padding: 0.94rem 0 0 0;
+        @media (min-width: 768px) {
+            padding: 2.81rem 0 0 0;
+        }
+        @media (min-width: 992px) {
+            width: 27.2rem;
+        }
+        & > .row {
+            --bs-gutter-x: 0;
+            --bs-gutter-y: 1.56rem;
+            @media (min-width: 768px) {
+                --bs-gutter-y: 2.81rem;
+            }
+            @media (min-width: 992px) {
+                --bs-gutter-y: 3.13rem;
+            }
+        }
+    }
+    &-secondary {
+        display: block;
+        padding: 0.94rem;
+        background-color: var(--white);
+        border: 0.0625rem solid rgba(var(--dark-blue-rgb), 0.2);
+        @media (min-width: 768px) {
+            padding: 2.81rem;
+        }
+        @media (min-width: 1200px) {
+            width: 40.9rem;
+        }
+        & > .row {
+            --bs-gutter-x: 0;
+            --bs-gutter-y: 1.56rem;
+            @media (min-width: 768px) {
+                --bs-gutter-y: 2.81rem;
+            }
+            @media (min-width: 992px) {
+                --bs-gutter-y: 3.13rem;
+            }
+        }
+    }
+}

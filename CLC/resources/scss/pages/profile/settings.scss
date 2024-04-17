@@ -1,0 +1,53 @@
+// components
+@import "../../components/suggestions";
+
+// parts
+@import "../../parts/email-block.scss";
+@import "../../parts/timer.scss";
+@import "../../parts/contest-banner.scss";
+
+.section-settings {
+    position: relative;
+    z-index: 1;
+    --bs-section-padding: 4.375rem;
+    position: relative;
+    z-index: 1;
+    padding: var(--bs-section-padding) 0;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --bs-section-padding: 5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 5.625rem;
+    }
+    &-header {
+        & > .row {
+            --bs-gutter-x: 1.25rem;
+            --bs-gutter-y: 2.5rem;
+            align-items: flex-start;
+            @media (min-width: 768px) {
+                --bs-gutter-x: 2.25rem;
+                --bs-gutter-y: 3.125rem;
+            }
+            @media (min-width: 1200px) {
+                align-items: center;
+            }
+        }
+    }
+    &-content {
+        padding-top: 4.6875rem;
+        @media (min-width: 768px) {
+            padding-top: 5rem;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 6.25rem;
+        }
+        & .row {
+            --bs-gutter-x: 1.25rem;
+            --bs-gutter-y: 2.5rem;
+            & .btn {
+                --bs-btn-padding-y: 0.625rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import "../parts/card-discordantly.scss";
+@import "../parts/collapse-card.scss";
+
+.section-program {
+    position: relative;
+    z-index: 1;
+    &-header {
+        --bs-section-padding-top: 3.75rem;
+        --bs-section-padding-bottom: 15.56rem;
+        position: relative;
+        z-index: 2;
+        background-color: var(--green);
+        padding: var(--bs-section-padding-top) 0 var(--bs-section-padding-bottom);
+        @media (min-width: 768px) {
+            --bs-section-padding-top: 5.5rem;
+            --bs-section-padding-bottom: 10.75rem;
+        }
+        @media (min-width: 1200px) {
+            --bs-section-padding-top: 8.44rem;
+            --bs-section-padding-bottom: 15.75rem;
+        }
+    }
+    &-cards {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: fit-content;
+        transform: translate(0, calc(-30% + var(--bs-section-padding-bottom)));
+        @media (min-width: 768px) {
+            transform: translate(0, 40%);
+        }
+        & .cards-discordantly {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            & > * {
+                flex-basis: 50%;
+                @media (min-width: 768px) {
+                    flex-basis: 25%;
+                }
+                &:nth-child(odd) {
+                    transform: translateY(15%);
+                }
+            }
+        }
+    }
+    &-content {
+        --bs-section-padding-top: 13.94rem;
+        --bs-section-padding-bottom: 4.81rem;
+        position: relative;
+        z-index: 1;
+        background-color: var(--grey);
+        padding: var(--bs-section-padding-top) 0 var(--bs-section-padding-bottom);
+        @media (min-width: 768px) {
+            --bs-section-padding-top: 16rem;
+            --bs-section-padding-bottom: 7.5rem;
+        }
+        @media (min-width: 1200px) {
+            --bs-section-padding-top: 18.56rem;
+            --bs-section-padding-bottom: 10rem;
+        }
+    }
+    &-collapses {
+        display: block;
+    }
+    &-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3.13rem;
+        @media (min-width: 1200px) {
+            padding-top: 4.38rem;
+        }
+    }
+}

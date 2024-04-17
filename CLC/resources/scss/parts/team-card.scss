@@ -1,0 +1,68 @@
+.team-card {
+    position: relative;
+    width: 8.75rem;
+    max-width: 8.75rem;
+    display: flex;
+    flex-direction: column;
+    filter: grayscale(1);
+    transition: 0.4s ease;
+    @media (min-width: 1200px) {
+        width: 15.625rem;
+        max-width: 15.625rem;
+    }
+    &:hover {
+        filter: grayscale(0);
+    }
+    &-wrapper {
+        position: relative;
+        width: 100%;
+        height: 12.125rem;
+        border-radius: 0;
+        margin-bottom: 1.875rem;
+        overflow: hidden;
+        @media (min-width: 1200px) {
+            height: 21.875rem;
+        }
+        & img,
+        & svg,
+        & canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+        }
+    }
+    &-name {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 186%;
+        color: rgba(var(--dark-blue-rgb), 1);
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        @media (min-width: 1200px) {
+            font-size: 1.125rem;
+            line-height: 156%;
+        }
+    }
+    &-description {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 171%;
+        color: rgba(var(--dark-blue-rgb), 0.5);
+        padding-top: 10px;
+        flex: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+    }
+}

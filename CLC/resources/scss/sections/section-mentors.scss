@@ -1,0 +1,104 @@
+@import "../parts/mentor-card.scss";
+
+.section-mentors {
+    --bs-section-padding-top: 3.1725rem;
+    --bs-section-padding-bottom: 3.015rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--bs-section-padding-top) 0 var(--bs-section-padding-bottom);
+    @media (min-width: 768px) {
+        --bs-section-padding-top: 6.345rem;
+        --bs-section-padding-bottom: 6.03rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding-top: 12.69rem;
+        --bs-section-padding-bottom: 6.03rem;
+    }
+    &-content {
+        position: relative;
+        z-index: 1;
+        padding-top: 2.5rem;
+        @media (min-width: 1200px) {
+            padding-top: 2.63rem;
+        }
+    }
+    &-subtitle {
+        padding-top: 1.38rem;
+        & > .row {
+            --bs-gutter-x: 1.44rem;
+            --bs-gutter-y: 1.44rem;
+        }
+    }
+    &-figure {
+        position: relative;
+        z-index: 1;
+        width: 3.0625rem;
+        height: 3.0625rem;
+    }
+    &-icon {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url("/public_html/assets/images/icons/swiper/opinions/bg.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &-swiper {
+        // @media (min-width: 768px) {
+        //     padding-top: 4.69rem;
+        // }
+    }
+    .swiper-mentors {
+        position: relative;
+        z-index: 1;
+        .swiper-wrapper {
+            .swiper-slide,
+            swiper-slide {
+                width: fit-content !important;
+            }
+        }
+        .mentor-btn {
+            width: 1.8125rem;
+            height: 1.8125rem;
+            cursor: pointer;
+            @media (min-width: 768px) {
+                width: 2.8125rem;
+                height: 2.8125rem;
+            }
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &:is(.swiper-button-disabled) {
+                opacity: 0.5;
+            }
+        }
+        .swiper-nav {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin-top: 1.44rem;
+            & > .row {
+                --bs-gutter-x: 0.5rem;
+            }
+        }
+        .mentor-scrollbar {
+            --swiper-scrollbar-drag-bg-color: var(--green);
+            --swiper-scrollbar-border-radius: 2.5rem;
+            --swiper-scrollbar-margin-left: 2.06rem;
+            display: flex;
+            align-items: center;
+            width: calc(100% - var(--swiper-scrollbar-margin-left));
+            margin-left: var(--swiper-scrollbar-margin-left);
+            height: 100%;
+            & .swiper-scrollbar-drag {
+                height: 0.1875rem;
+            }
+        }
+    }
+}

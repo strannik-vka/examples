@@ -1,0 +1,102 @@
+.expert-card {
+    display: block;
+    @media (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+    &-left {
+        max-width: 100%;
+        flex: 0 0 100%;
+        @media (min-width: 576px) {
+            max-width: 21.5625rem;
+            flex: unset;
+        }
+        @media (min-width: 768px) {
+            max-width: 19.9375rem;
+            flex: 0 0 19.9375rem;
+        }
+        @media (min-width: 992px) {
+            max-width: 26.1875rem;
+            flex: 0 0 26.1875rem;
+        }
+        @media (min-width: 1200px) {
+            max-width: 32.5rem;
+            flex: 0 0 32.5rem;
+        }
+    }
+    &-wrapper {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56%;
+        border-radius: 0;
+        overflow: hidden;
+        @media (min-width: 576px) {
+            padding-bottom: 14.5625rem;
+        }
+        @media (min-width: 768px) {
+            padding-bottom: 13.4375rem;
+        }
+        @media (min-width: 992px) {
+            padding-bottom: 17.625rem;
+        }
+        @media (min-width: 1200px) {
+            padding-bottom: 21.875rem;
+        }
+        & img,
+        & svg,
+        & canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+        }
+    }
+    &-right {
+        max-width: 100%;
+        flex: 0 0 100%;
+        @media (min-width: 576px) {
+            max-width: 21.5625rem;
+            flex: 0 0 21.5625rem;
+        }
+        @media (min-width: 768px) {
+            max-width: 21.625rem;
+            flex: 0 0 21.625rem;
+        }
+        @media (min-width: 992px) {
+            max-width: 29.4375rem;
+            flex: 0 0 29.4375rem;
+        }
+        @media (min-width: 1200px) {
+            max-width: 37.125rem;
+            flex: 0 0 37.125rem;
+        }
+    }
+    &-header {
+        padding-top: 2.1875rem;
+        @media (min-width: 768px) {
+            padding-top: 1.1563rem;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 1.75rem;
+        }
+    }
+    &-description {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 200%;
+        color: var(--dark-blue);
+        padding-top: 25px;
+        @media (min-width: 1200px) {
+            font-size: 1.125rem;
+            line-height: 156%;
+        }
+    }
+}

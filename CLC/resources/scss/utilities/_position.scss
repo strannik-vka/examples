@@ -1,0 +1,20 @@
+.position {
+    &-absolute {
+        position: absolute !important;
+    }
+    &-sticky {
+        position: sticky !important;
+    }
+    &-relative {
+        position: relative !important;
+    }
+    &-fixed {
+        position: fixed !important;
+    }
+    &-static {
+        position: static !important;
+    }
+    &-unset {
+        position: unset !important;
+    }
+}

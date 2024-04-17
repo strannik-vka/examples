@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Regular.eot');
+    src: local('IBM Plex Serif Regular'), local('IBMPlexSerif-Regular'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Regular.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Regular.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLight.eot');
+    src: local('IBM Plex Serif ExtraLight'), local('IBMPlexSerif-ExtraLight'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLight.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLight.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-LightItalic.eot');
+    src: local('IBM Plex Serif Light Italic'), local('IBMPlexSerif-LightItalic'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-LightItalic.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-LightItalic.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Bold.eot');
+    src: local('IBM Plex Serif Bold'), local('IBMPlexSerif-Bold'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Bold.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Bold.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLightItalic.eot');
+    src: local('IBM Plex Serif ExtraLight Italic'), local('IBMPlexSerif-ExtraLightItalic'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLightItalic.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLightItalic.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Light.eot');
+    src: local('IBM Plex Serif Light'), local('IBMPlexSerif-Light'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Light.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Light.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Light.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Medium.eot');
+    src: local('IBM Plex Serif Medium'), local('IBMPlexSerif-Medium'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Medium.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Medium.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-MediumItalic.eot');
+    src: local('IBM Plex Serif Medium Italic'), local('IBMPlexSerif-MediumItalic'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-MediumItalic.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-MediumItalic.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-BoldItalic.eot');
+    src: local('IBM Plex Serif Bold Italic'), local('IBMPlexSerif-BoldItalic'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-BoldItalic.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-BoldItalic.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Italic.eot');
+    src: local('IBM Plex Serif Italic'), local('IBMPlexSerif-Italic'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Italic.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Italic.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Italic.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBold.eot');
+    src: local('IBM Plex Serif SemiBold'), local('IBMPlexSerif-SemiBold'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBold.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBold.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ThinItalic.eot');
+    src: local('IBM Plex Serif Thin Italic'), local('IBMPlexSerif-ThinItalic'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ThinItalic.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ThinItalic.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBoldItalic.eot');
+    src: local('IBM Plex Serif SemiBold Italic'), local('IBMPlexSerif-SemiBoldItalic'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBoldItalic.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBoldItalic.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Serif';
+    src: url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Thin.eot');
+    src: local('IBM Plex Serif Thin'), local('IBMPlexSerif-Thin'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Thin.eot?#iefix') format('embedded-opentype'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Thin.woff2') format('woff2'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Thin.woff') format('woff'),
+        url('/public_html/assets/pdf/fonts/IBMPlex/IBMPlexSerif-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

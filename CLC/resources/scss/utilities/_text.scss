@@ -1,0 +1,151 @@
+.text {
+    &-left {
+        text-align: left !important;
+    }
+    &-right {
+        text-align: right !important;
+    }
+    &-center {
+        text-align: center !important;
+    }
+    &-justify {
+        text-align: justify !important;
+    }
+    &-white {
+        color: var(--white);
+    }
+    &-decoration {
+        &-underline {
+            text-decoration: underline !important;
+        }
+        &-none {
+            text-decoration: none !important;
+        }
+    }
+    &-xs {
+        @media screen and (max-width: 575.98px) {
+            &-left {
+                text-align: left !important;
+            }
+            &-right {
+                text-align: right !important;
+            }
+            &-center {
+                text-align: center !important;
+            }
+            &-justify {
+                text-align: justify !important;
+            }
+        }
+    }
+    &-sm {
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            &-left {
+                text-align: left !important;
+            }
+            &-right {
+                text-align: right !important;
+            }
+            &-center {
+                text-align: center !important;
+            }
+            &-justify {
+                text-align: justify !important;
+            }
+        }
+    }
+    &-md {
+        @media (min-width: 768px) {
+            &-left {
+                text-align: left !important;
+            }
+            &-right {
+                text-align: right !important;
+            }
+            &-center {
+                text-align: center !important;
+            }
+            &-justify {
+                text-align: justify !important;
+            }
+        }
+    }
+    &-lg {
+        @media (min-width: 992px) {
+            &-left {
+                text-align: left !important;
+            }
+            &-right {
+                text-align: right !important;
+            }
+            &-center {
+                text-align: center !important;
+            }
+            &-justify {
+                text-align: justify !important;
+            }
+        }
+    }
+    &-xl {
+        @media (min-width: 1200px) {
+            &-left {
+                text-align: left !important;
+            }
+            &-right {
+                text-align: right !important;
+            }
+            &-center {
+                text-align: center !important;
+            }
+            &-justify {
+                text-align: justify !important;
+            }
+        }
+    }
+    &-xxl {
+        @media (min-width: 1440px) {
+            &-left {
+                text-align: left !important;
+            }
+            &-right {
+                text-align: right !important;
+            }
+            &-center {
+                text-align: center !important;
+            }
+            &-justify {
+                text-align: justify !important;
+            }
+        }
+    }
+    // transform
+    &-uppercase {
+        text-transform: uppercase !important;
+    }
+    &-lowercase {
+        text-transform: lowercase !important;
+    }
+    &-normal {
+        text-transform: none !important;
+    }
+    &-capitalize {
+        text-transform: capitalize !important;
+    }
+    &-nowrap {
+        white-space: nowrap;
+    }
+    &-wrap {
+        &-normal {
+            white-space: normal !important;
+        }
+    }
+    &-pre {
+        white-space: pre;
+        &-line {
+            white-space: pre-line;
+        }
+        &-wrap {
+            white-space: pre-wrap;
+        }
+    }
+}

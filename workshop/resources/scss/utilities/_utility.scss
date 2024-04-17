@@ -1,0 +1,23 @@
+@import "./align";
+@import "./border";
+@import "./cols";
+@import "./container";
+@import "./display";
+@import "./flex";
+@import "./filter";
+@import "./margin";
+@import "./object";
+@import "./opacity";
+@import "./order";
+@import "./ratio";
+@import "./rounded";
+@import "./padding";
+@import "./position";
+@import "./pointer-events";
+@import "./size";
+@import "./text";
+@import "./visually";
+
+:root {
+    --header-height: 4.25rem;
+}

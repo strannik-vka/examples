@@ -1,0 +1,212 @@
+h,
+.h- {
+    &1 {
+        font-family: "Stratos LC";
+        font-weight: 500;
+        font-size: 2.1875rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0;
+        @media (min-width: 1200px) {
+            font-size: 4.0625rem;
+        }
+    }
+    &2 {
+        font-family: "Stratos LC";
+        font-weight: 500;
+        font-size: 1.875rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0;
+        @media (min-width: 1200px) {
+            font-size: 2.8125rem;
+        }
+    }
+    &3 {
+        font-family: "Stratos LC";
+        font-weight: 500;
+        font-size: 1.75rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0;
+        @media (min-width: 1200px) {
+            font-size: 2.25rem;
+        }
+    }
+    &4 {
+        font-family: "Stratos LC";
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0;
+        @media (min-width: 1200px) {
+            font-size: 2.1875rem;
+        }
+    }
+    &5 {
+        font-family: "Stratos LC";
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0;
+        @media (min-width: 1200px) {
+            font-size: 1.5rem;
+        }
+    }
+    &6 {
+        font-family: "Stratos LC";
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0;
+        @media (min-width: 1200px) {
+            font-size: 1.125rem;
+        }
+    }
+}
+
+.text {
+    &-1 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 162%;
+        @media (min-width: 1200px) {
+            font-size: 1.375rem;
+            line-height: 120%;
+        }
+    }
+    &-2 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 183%;
+        @media (min-width: 1200px) {
+            font-size: 1.125rem;
+            line-height: 156%;
+        }
+    }
+    &-3 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 171%;
+        @media (min-width: 1200px) {
+            font-size: 1.125rem;
+            line-height: 156%;
+        }
+    }
+    &-4 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 186%;
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            line-height: 162%;
+        }
+    }
+    &-5 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.6875rem;
+        line-height: 191%;
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            line-height: 175%;
+        }
+    }
+    &-6 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 157%;
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            line-height: 150%;
+        }
+    }
+    &-7 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.6875rem;
+        line-height: 191%;
+        @media (min-width: 1200px) {
+            font-size: 0.875rem;
+            line-height: 171%;
+        }
+    }
+    &-8 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 250%;
+        @media (min-width: 1200px) {
+            font-size: 0.8125rem;
+            line-height: 269%;
+        }
+    }
+    &-9 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 200%;
+        @media (min-width: 1200px) {
+            font-size: 0.8125rem;
+            line-height: 185%;
+        }
+    }
+    &-10 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 233%;
+    }
+    &-11 {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.6875rem;
+        line-height: 145%;
+        letter-spacing: 0.03em;
+        @media (min-width: 1200px) {
+            font-size: 0.75rem;
+            line-height: 150%;
+            letter-spacing: normal;
+        }
+    }
+    &-link {
+        color: inherit;
+    }
+    &-review {
+        font-family: "Stratos LC";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        line-height: 0.9375rem;
+        text-transform: uppercase;
+        @media (min-width: 1200px) {
+            font-size: 0.875rem;
+            line-height: 1.125rem;
+        }
+    }
+    &-green {
+        color: var(--green) !important;
+        &-pressed {
+            color: var(--green-pressed) !important;
+        }
+    }
+}

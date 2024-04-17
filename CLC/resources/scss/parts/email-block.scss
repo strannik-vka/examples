@@ -1,0 +1,28 @@
+.email-block {
+    font-family: "IBM Plex Serif";
+    font-style: normal;
+    &-title {
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 250%;
+        color: var(--dark-blue);
+        @media (min-width: 1200px) {
+            font-size: 0.875rem;
+            line-height: 186%;
+        }
+    }
+    &-description {
+        font-weight: 400;
+        font-size: 0.6875rem;
+        line-height: 191%;
+        color: var(--dark-blue);
+        opacity: 0.5;
+        @media (min-width: 1200px) {
+            font-size: 0.875rem;
+            line-height: 171%;
+        }
+        & > * {
+            text-decoration: none;
+        }
+    }
+}

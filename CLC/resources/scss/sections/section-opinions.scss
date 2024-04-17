@@ -1,0 +1,117 @@
+@import "../parts/opinion-card.scss";
+
+.section-opinions {
+    --bs-section-padding-top: 2.53rem;
+    --bs-section-padding-bottom: 16.62rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--bs-section-padding-top) 0 var(--bs-section-padding-bottom);
+    @media (min-width: 768px) {
+        --bs-section-padding-top: 4.47rem;
+        --bs-section-padding-bottom: 4.47rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding-top: 8.94rem;
+        --bs-section-padding-bottom: 4.47rem;
+    }
+    &-content {
+        position: relative;
+        z-index: 1;
+    }
+    &-background {
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        width: 31.5625rem;
+        height: 32.0625rem;
+        transform: translate(-50%, 45%);
+        @media (min-width: 768px) {
+            width: 18rem;
+            height: 18rem;
+            top: -10%;
+            left: -2rem;
+            transform: translate(0, 0);
+        }
+        @media (min-width: 992px) {
+            width: 23.4145rem;
+            height: 23.41469rem;
+            top: -5%;
+            left: 3.03rem;
+        }
+        @media (min-width: 1200px) {
+            top: -25%;
+            left: 3.03rem;
+        }
+    }
+    &-figure {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url("/public_html/assets/images/icons/swiper/opinions/bg.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &-swiper {
+        @media (min-width: 768px) {
+            padding-top: 4.69rem;
+        }
+    }
+    .swiper-opinions {
+        position: relative;
+        z-index: 1;
+        .swiper-wrapper {
+            align-items: stretch;
+            .swiper-slide,
+            swiper-slide {
+                @media screen and (max-width: 767.98px) {
+                    width: max-content !important;
+                }
+                height: auto !important;
+            }
+        }
+    }
+    .opinions-btn {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        display: none;
+        cursor: pointer;
+        transform: translate(0, -50%);
+        @media (min-width: 992px) {
+            display: block;
+        }
+        &-prev {
+            left: 0;
+        }
+        &-next {
+            right: 0;
+        }
+        &.swiper-button-disabled {
+            opacity: 0.3;
+        }
+    }
+    .opinions-pagination {
+        --swiper-pagination-bottom: -3.5rem;
+        --swiper-pagination-bullet-width: 0.3125rem;
+        --swiper-pagination-bullet-height: 0.3125rem;
+        --swiper-pagination-bullet-opacity: 0.35rem;
+        --swiper-pagination-bullet-horizontal-gap: 0.63rem;
+        --swiper-pagination-bullet-inactive-color: var(--black);
+        --swiper-pagination-color: var(--black);
+        position: absolute;
+        left: 50%;
+        z-index: 10;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        transform: translate(-50%, 0);
+        @media (min-width: 768px) {
+            --swiper-pagination-bottom: -5.44rem;
+        }
+    }
+}

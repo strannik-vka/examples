@@ -1,0 +1,13 @@
+.useful-list {
+    list-style-type: "- ";
+    margin: unset;
+    padding-left: 0.75rem;
+    & li {
+        & a {
+            color: var(--green-pressed);
+            text-decoration: underline;
+            text-underline-offset: 0.1875rem;
+            text-decoration-skip-ink: none;
+        }
+    }
+}

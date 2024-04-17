@@ -1,0 +1,109 @@
+.advantages-item {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border: 0.0625rem solid;
+    border-color: initial;
+    --bs-gutter-x: 0.875rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+    @media (min-width: 768px) {
+        height: 100%;
+    }
+    &-col {
+        position: relative;
+        flex: 33.33333333%;
+        width: 33.33333333%;
+        max-width: 33.33333333%;
+        height: 0;
+        padding-bottom: calc(33.33333333% - var(--bs-gutter-x));
+        --bs-aspect-ratio: 100%;
+        @media (min-width: 768px) {
+            --bs-gutter-x: 1rem;
+            max-width: unset;
+        }
+        @media (min-width: 992px) {
+            --bs-gutter-x: 1.375rem;
+        }
+        @media (min-width: 1200px) {
+            --bs-gutter-x: 2.125rem;
+        }
+    }
+    &-content {
+        position: absolute;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 var(--bs-gutter-x);
+    }
+    &-dark {
+        background-color: var(--green);
+        border-color: var(--green);
+        & > * {
+            color: var(--dark-blue);
+        }
+    }
+    &-light {
+        background-color: transparent;
+        border-color: var(--green);
+        & > * {
+            color: var(--dark-blue);
+        }
+    }
+    &-white {
+        background-color: var(--white);
+        border-color: var(--white);
+        & > * {
+            color: var(--dark-blue);
+        }
+    }
+    &-square {
+        border-radius: unset;
+        &:hover {
+            border-radius: 100%;
+        }
+    }
+    &-circle {
+        border-radius: 100%;
+        &:hover {
+            border-radius: unset;
+        }
+    }
+    &-number {
+        font-family: "Stratos LC";
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        transition: 0.4s ease;
+        @media (min-width: 1200px) {
+            font-size: 1.125rem;
+        }
+    }
+    &-description {
+        width: 100%;
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.6875rem;
+        line-height: 145%;
+        letter-spacing: 0.03em;
+        text-align: center;
+        transition: 0.4s ease;
+        padding-top: 0.625rem;
+        @media (min-width: 1200px) {
+            font-size: 0.75rem;
+            line-height: 150%;
+            letter-spacing: normal;
+        }
+    }
+}

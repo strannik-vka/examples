@@ -1,0 +1,150 @@
+@import "../parts/recommendation-card";
+
+.section-recommendations {
+    --bs-section-padding: 6.875rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--bs-section-padding) 0;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 6.31rem;
+    }
+    &-inner {
+        position: relative;
+        z-index: 1;
+        padding-top: 2.5rem;
+        @media (min-width: 1200px) {
+            padding-top: 3.31rem;
+        }
+    }
+    &-nav {
+        & > .row {
+            --bs-gutter-x: 0.62rem;
+            --bs-gutter-y: 0.62rem;
+        }
+    }
+    &-articles {
+        padding-top: 2.12rem;
+        @media (min-width: 1200px) {
+            padding-top: 4.12rem;
+        }
+    }
+    &-books,
+    &-films {
+        padding-top: 0.94rem;
+        @media (min-width: 1200px) {
+            padding-top: 1.88rem;
+        }
+    }
+    &-podcasts,
+    &-inspirations {
+        padding-top: 1.19rem;
+        @media (min-width: 1200px) {
+            padding-top: 2.31rem;
+        }
+    }
+    .swiper-articles,
+    .swiper-books,
+    .swiper-films,
+    .swiper-podcasts,
+    .swiper-inspirations {
+        .swiper-wrapper {
+            will-change: transform;
+            .swiper-slide {
+                // width: max-content !important;
+                display: flex;
+                height: auto !important;
+            }
+        }
+        .articles-btn,
+        .books-btn,
+        .films-btn,
+        .podcasts-btn,
+        .inspirations-btn {
+            width: 1.8125rem;
+            height: 1.8125rem;
+            cursor: pointer;
+            @media (min-width: 768px) {
+                width: 2.8125rem;
+                height: 2.8125rem;
+            }
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &:is(.swiper-button-disabled) {
+                opacity: 0.5;
+            }
+        }
+        .swiper-nav {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin-top: 3.56rem;
+            & > .row {
+                --bs-gutter-x: 0.5rem;
+            }
+        }
+        .articles-scrollbar,
+        .books-scrollbar,
+        .films-scrollbar,
+        .podcasts-scrollbar,
+        .inspirations-scrollbar {
+            --swiper-scrollbar-drag-bg-color: var(--green);
+            --swiper-scrollbar-border-radius: 2.5rem;
+            --swiper-scrollbar-margin-left: 2.06rem;
+            display: flex;
+            align-items: center;
+            width: calc(100% - var(--swiper-scrollbar-margin-left));
+            margin-left: var(--swiper-scrollbar-margin-left);
+            height: 100%;
+            & .swiper-scrollbar-drag {
+                height: 0.1875rem;
+            }
+        }
+    }
+}
+
+.recommendations-articles {
+    & > .row {
+        --bs-gutter-x: 0.9375rem;
+        --bs-gutter-y: 1.875rem;
+        @media (min-width: 768px) {
+            --bs-gutter-x: 1.25rem;
+        }
+        @media (min-width: 1200px) {
+            --bs-gutter-x: 3.81rem;
+            --bs-gutter-y: 2.55rem;
+        }
+    }
+}
+
+.recommendations-books,
+.recommendations-films {
+    & > .row {
+        --bs-gutter-x: 0.9375rem;
+        --bs-gutter-y: 1.875rem;
+        @media (min-width: 768px) {
+            --bs-gutter-x: 2.44rem;
+            --bs-gutter-y: 0.62rem;
+        }
+    }
+}
+
+.recommendations-podcasts,
+.recommendations-inspirations {
+    & > .row {
+        --bs-gutter-x: 0.9375rem;
+        --bs-gutter-y: 1.875rem;
+        @media (min-width: 768px) {
+            --bs-gutter-x: 2.44rem;
+            --bs-gutter-y: 0.62rem;
+        }
+    }
+}

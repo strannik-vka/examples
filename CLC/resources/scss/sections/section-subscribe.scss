@@ -1,0 +1,77 @@
+.section-subscribe {
+    --bs-section-padding: 3.4375rem;
+    position: relative;
+    z-index: 1;
+    padding: var(--bs-section-padding) 0;
+    @media (min-width: 768px) {
+        --bs-section-padding: 3.75rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 5rem;
+    }
+    &-inner {
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+        border-radius: 0;
+        padding: 0.9375rem;
+        @media (min-width: 768px) {
+            padding: 1.875rem;
+        }
+        & > .row {
+            --bs-gutter-x: 2.1875rem;
+            --bs-gutter-y: 0.9375rem;
+            @media (min-width: 768px) {
+                --bs-gutter-y: 1.875rem;
+            }
+            @media (min-width: 1200px) {
+                align-items: center;
+            }
+        }
+    }
+    &-form {
+        @media screen and (max-width: 767.98px) {
+            flex-direction: column;
+            & input {
+                width: 100% !important;
+                border-radius: 0 !important;
+            }
+            & button {
+                margin-top: 0.9375rem;
+                border-radius: 0 !important;
+            }
+        }
+        @media (min-width: 768px) {
+            height: 3.125rem;
+            & input {
+                border-top-left-radius: 0 !important;
+                border-bottom-left-radius: 0 !important;
+            }
+            & button {
+                border-radius: 0 !important;
+                margin-left: -0.5625rem !important;
+            }
+        }
+        @media (min-width: 1200px) {
+            width: 100%;
+            max-width: 31.6875rem;
+            margin-left: auto;
+        }
+        & input {
+            background-color: var(--grey);
+        }
+        & button {
+            padding: 0.8125rem 2.8125rem;
+            z-index: 5 !important;
+        }
+        & .invalid-feedback {
+            position: relative;
+            bottom: unset;
+            margin-top: unset;
+            @media (min-width: 768px) {
+                position: absolute;
+                bottom: -60%;
+            }
+        }
+    }
+}

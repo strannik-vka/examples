@@ -1,0 +1,115 @@
+@import "./block/score.scss";
+
+.section-navigation {
+    position: relative;
+    padding: 1.25rem 0;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        padding: 1.875rem 0;
+    }
+    &-inner {
+        width: fit-content;
+    }
+}
+
+.section-process {
+    --bs-section-padding: 1.25rem;
+    position: relative;
+    padding: var(--bs-section-padding) 0;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --bs-section-padding: 1.875rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 3.75rem;
+    }
+    &-row {
+        --bs-gutter-y: 2.8125rem;
+        @media (min-width: 768px) {
+            --bs-gutter-y: 3.75rem;
+        }
+        @media (min-width: 1200px) {
+            --bs-gutter-x: 7.875rem;
+        }
+    }
+    &-title {
+        word-spacing: 100vw;
+    }
+    &-subtitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.25rem;
+        border-bottom: 0.0625rem solid rgba(var(--dark-blue-rgb), 0.1);
+        &-link {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.75rem;
+            line-height: 140%;
+            letter-spacing: 0.04em;
+            text-decoration: underline;
+            color: var(--dark-blue);
+            transition: 0.4s ease;
+            @media (min-width: 768px) {
+                font-size: 0.875rem;
+            }
+            &:hover {
+                color: inherit;
+                opacity: 0.7;
+                text-decoration: none;
+                transition: 0.4s ease;
+            }
+        }
+    }
+    &-portfolio {
+        & > .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 1.25rem;
+        }
+    }
+    &-score {
+        margin-top: 2.8125rem;
+        @media (min-width: 768px) {
+            margin-top: 1.875rem;
+        }
+    }
+    &-badge {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.8125rem;
+        @media (min-width: 768px) {
+            margin-top: 3.75rem;
+        }
+        @media (min-width: 992px) {
+            margin-top: 0;
+        }
+    }
+    &-badges {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 1.5625rem;
+        @media (min-width: 768px) {
+            --bs-gutter-x: 1.25rem;
+            --bs-gutter-y: 0;
+        }
+    }
+    &-description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.8125rem;
+        @media (min-width: 768px) {
+            margin-top: 3.75rem;
+        }
+        @media (min-width: 992px) {
+            margin-top: 4.375rem;
+        }
+        & p {
+            white-space: pre-line;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

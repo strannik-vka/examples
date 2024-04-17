@@ -1,0 +1,65 @@
+.poll-form {
+    display: flex;
+    flex-direction: column;
+    &-personality {
+        & > .row {
+            --bs-gutter-x: 1.25rem;
+            --bs-gutter-y: 3.75rem;
+        }
+    }
+    &-radios {
+        @media (min-width: 768px) {
+            margin-bottom: 6px;
+        }
+        & > .row {
+            --bs-gutter-x: 2.5rem;
+            --bs-gutter-y: 2.5rem;
+        }
+    }
+    &-main {
+        & > .row {
+            --bs-gutter-x: 1.25rem;
+            --bs-gutter-y: 3.5rem;
+        }
+        &-columns {
+            & > .row {
+                --bs-gutter-x: 1.25rem;
+                --bs-gutter-y: 3.5rem;
+            }
+        }
+    }
+    &-qa {
+        & > .row {
+            --bs-gutter-x: 1.25rem;
+            --bs-gutter-y: 3.125rem;
+        }
+    }
+    &-content {
+        margin-top: 3.75rem;
+        @media (min-width: 768px) {
+            margin-top: 5.625rem;
+        }
+    }
+    &-about {
+        margin-top: 0;
+        @media (min-width: 768px) {
+            margin-top: 2.8125rem;
+        }
+    }
+    &-footer {
+        margin-top: 0;
+        @media (min-width: 768px) {
+            margin-top: 4.0625rem;
+        }
+    }
+    &-agreement {
+        & > .row {
+            --bs-gutter-x: 1.25rem;
+            --bs-gutter-y: 3.125rem;
+            @media (min-width: 768px) {
+                --bs-gutter-x: 1.5625rem;
+                --bs-gutter-y: 1.25rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+:root {
+    --bs-body-bg: #fafafa;
+    --bs-body-bg-rgb: 250, 250, 250;
+    --white: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --true-black: #000000;
+    --true-black-rgb: 0, 0, 0;
+    --black: #222222;
+    --black-rgb: 34, 34, 34;
+    --primary: #3034b8;
+    --primary-rgb: 48, 52, 184;
+    --secondary: #868686;
+    --secondary-rgb: 134, 134, 134;
+    --success: #81ea67;
+    --success-rgb: 129, 234, 103;
+    --danger: #f24822;
+    --danger-rgb: 242, 72, 33;
+    --warning: #ffec86;
+    --warning-rgb: 255, 236, 134;
+    --orange: #f6ad59;
+    --orange-rgb: 246, 173, 89;
+    --blue: #1b76ff;
+    --blue-rgb: 27, 118, 255;
+    --skyblue: #6cace7;
+    --skyblue-rgb: 108, 172, 231;
+    --purple: #9747ff;
+    --purple-rgb: 151, 71, 255;
+    --green: #48cd3d;
+    --green-rgb: 72, 205, 61;
+    --red: #ec7a7a;
+    --red-rgb: 236, 122, 122;
+    --grey-100: #f7f7f8;
+    --grey-100-rgb: 247, 247, 248;
+    --grey-200: #e7e9eb;
+    --grey-200-rgb: 231, 233, 235;
+    --grey-300: #d2d6da;
+    --grey-300-rgb: 210, 214, 218;
+    --grey-400: #9fa6ad;
+    --grey-400-rgb: 159, 166, 173;
+    --grey-500: #6e7881;
+    --grey-500-rgb: 110, 120, 129;
+    --grey-600: #51585f;
+    --grey-600-rgb: 81, 88, 95;
+    --grey-700: #3f4449;
+    --grey-700-rgb: 63, 68, 73;
+    --grey-800: #2a2d2f;
+    --grey-800-rgb: 42, 45, 47;
+    --grey-900: #222222;
+    --grey-900-rgb: 34, 34, 34;
+}
+
+$white: #ffffff;
+$dark-white: #fafafa;
+$grey: #eeeeee;
+$dark: #0e0e0e;
+$normal-grey: #737373;
+$green: #48cd3d;
+$blue: #1b76ff;
+$skyblue: #6cace7;
+$dark-green: #092f39;
+$primary: #3034b8 !default;
+$secondary: #868686 !default;
+$success: #81ea67 !default;
+$danger: #f24822 !default;
+$warning: #ffec86 !default;
+$orange: #f6ad59 !default;
+$purple: #9747ff !default;
+$error: #ec7a7a;
+$red: #ec7a7a;
+$black: #000000;
+$transparent: transparent;
+
+// grey palette
+$grey-100: #f7f7f8;
+$grey-200: #e7e9eb;
+$grey-300: #d2d6da;
+$grey-400: #9fa6ad;
+$grey-500: #6e7881;
+$grey-600: #51585f;
+$grey-700: #3f4449;
+$grey-800: #2a2d2f;
+$grey-900: #222222;
+
+// exp
+$colors: (
+    $primary: "primary",
+    $secondary: "secondary",
+    $green: "green",
+    $success: "success",
+    $danger: "danger",
+    $warning: "warning",
+    $white: "white",
+    $black: "black",
+    $orange: "orange",
+    $purple: "purple",
+    $blue: "blue",
+    $skyblue: "skyblue",
+    $red: "red",
+    $transparent: "transparent",
+
+    $grey-100: "grey-100",
+    $grey-200: "grey-200",
+    $grey-300: "grey-300",
+    $grey-400: "grey-400",
+    $grey-500: "grey-500",
+    $grey-600: "grey-600",
+    $grey-700: "grey-700",
+    $grey-800: "grey-800",
+    $grey-900: "grey-900"
+);
+
+@each $color, $value in $colors {
+    $color: $value;
+}

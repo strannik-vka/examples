@@ -1,0 +1,45 @@
+@import "../parts/education-card.scss";
+@import "../parts/education.swiper.pagination.scss";
+
+.section-education {
+    --bs-section-padding: 110px;
+    position: relative;
+    z-index: 1;
+    padding: var(--bs-section-padding) 0;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --bs-section-padding: 120px;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 160px;
+    }
+    & .swiper-tab {
+        padding-top: 40px;
+        @media (min-width: 768px) {
+            padding-top: 75px;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 85px;
+        }
+    }
+    &-inner {
+        position: relative;
+        padding-top: 40px;
+        @media (min-width: 768px) {
+            padding-top: 60px;
+        }
+    }
+    .swiper-tabs {
+        .swiper-wrapper {
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            @media (min-width: 768px) {
+                justify-content: center;
+            }
+            .swiper-slide {
+                width: max-content !important;
+            }
+        }
+    }
+}

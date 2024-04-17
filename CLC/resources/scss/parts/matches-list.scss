@@ -1,0 +1,83 @@
+.matches {
+    &-list {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: var(--white);
+        padding: 0.9375rem;
+        @media (min-width: 768px) {
+            padding: 2.1875rem;
+        }
+        @media (min-width: 1200px) {
+            padding: 2.5rem 2.9375rem;
+        }
+    }
+    &-inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &-card {
+        display: block;
+        padding: 1.5625rem 0;
+        border-bottom: 0.0625rem solid;
+        border-color: rgba(var(--dark-blue-rgb), 0.2);
+        @media (min-width: 768px) {
+            padding: 2.1875rem 0;
+        }
+        @media (min-width: 1200px) {
+            padding: 3.4375rem 0;
+        }
+        &:first-of-type {
+            padding-top: unset;
+        }
+        &:last-of-type {
+            border-bottom: unset;
+            padding-bottom: unset;
+        }
+        &-inner {
+            & > .row {
+                --bs-gutter-x: 0.625rem;
+                --bs-gutter-y: 1.25rem;
+                justify-content: flex-start;
+                @media (min-width: 768px) {
+                    --bs-gutter-x: 1.25rem;
+                }
+                @media (min-width: 1200px) {
+                    --bs-gutter-x: 5.625rem;
+                }
+            }
+        }
+        &-title {
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 0.75rem;
+            line-height: 183%;
+            color: var(--dark-blue);
+            @media (min-width: 768px) {
+                font-size: 0.875rem;
+                line-height: 157%;
+            }
+            @media (min-width: 1200px) {
+                font-size: 1rem;
+                line-height: 162%;
+            }
+        }
+        &-description {
+            font-family: "IBM Plex Serif";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.6875rem;
+            line-height: 191%;
+            color: var(--dark-blue);
+            @media (min-width: 768px) {
+                font-size: 0.875rem;
+                line-height: 157%;
+            }
+            @media (min-width: 1200px) {
+                font-size: 0.875rem;
+                line-height: 171%;
+            }
+        }
+    }
+}

@@ -1,0 +1,110 @@
+.mentor-card {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 15.375rem;
+    height: 27.375rem;
+    @media (min-width: 1200px) {
+        width: 19.375rem;
+        height: 34.375rem;
+    }
+    &-playing {
+        & .mentor-card-content,
+        & .mentor-card-play {
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s ease;
+        }
+    }
+    &-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: unset;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(9, 12, 17, 0) 0%, #242428 100%);
+        & iframe,
+        & video,
+        & source {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+        }
+        & img,
+        & image,
+        & picture,
+        & svg,
+        & object {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-navigation {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        padding: 1.12rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &-content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        padding: 2rem 1.22rem;
+        transition: 0.4s ease;
+    }
+    &-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 5;
+        display: block;
+        transform: translate(-50%, -50%);
+        transition: 0.4s ease;
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }
+    &-position {
+        font-size: 0.8125rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: rgba(var(--white-rgb), 0.6);
+    }
+    &-name {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.625rem;
+        color: rgba(var(--white-rgb), 1);
+    }
+    &-meo {
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.125rem;
+        color: rgba(var(--white-rgb), 1);
+    }
+}

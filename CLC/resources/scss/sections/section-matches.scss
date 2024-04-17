@@ -1,0 +1,38 @@
+@import "../parts/matches-list.scss";
+
+.section-matches {
+    --bs-section-padding: 6.875rem;
+    position: relative;
+    z-index: 1;
+    padding: var(--bs-section-padding) 0;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 10rem;
+    }
+    &-primary {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media (min-width: 768px) {
+            flex-direction: column;
+            width: 11.625rem;
+            height: 100%;
+        }
+        @media (min-width: 992px) {
+            width: 17.75rem;
+        }
+        @media (min-width: 1200px) {
+            width: 22.625rem;
+        }
+    }
+    &-content {
+        padding-top: 2.5rem;
+        @media (min-width: 768px) {
+            padding-top: unset;
+        }
+    }
+}

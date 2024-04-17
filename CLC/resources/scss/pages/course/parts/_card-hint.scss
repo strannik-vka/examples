@@ -1,0 +1,17 @@
+.card {
+    &-hint {
+        --card-hint-bg-color: var(--white);
+        --card-hint-padding-x: 1rem;
+        --card-hint-padding-y: 1rem;
+        position: relative;
+        z-index: 1;
+        display: block;
+        background-color: var(--card-hint-bg-color);
+        @media (min-width: 1200px) {
+            --card-hint-padding-x: 1.5rem;
+        }
+        &-body {
+            padding: var(--card-hint-padding-y) var(--card-hint-padding-x);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@import "../parts/team-card.scss";
+
+.section-team {
+    --bs-section-padding: 6.875rem;
+    position: relative;
+    z-index: 1;
+    padding: 0 0 var(--bs-section-padding);
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 10rem;
+    }
+    &-swiper {
+        padding-top: 2.5rem;
+        @media (min-width: 768px) {
+            padding-top: 4.6875rem;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 5.3125rem;
+        }
+    }
+    .swiper-team {
+        .swiper-wrapper {
+            .swiper-slide {
+                width: max-content !important;
+            }
+        }
+    }
+}

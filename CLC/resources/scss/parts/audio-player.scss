@@ -1,0 +1,250 @@
+.audio {
+    &-player {
+        --player-color: var(--dark-blue-rgb);
+        --player-bg: var(--green-rgb);
+        &-row {
+            --bs-gutter-x: 0.9375rem;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        &-btn {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: rgba(var(--player-bg), 1);
+            border-radius: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            transition: filter 0.2s ease;
+            @media (min-width: 992px) {
+                width: 3.125rem;
+                height: 3.125rem;
+            }
+            &:hover {
+                filter: brightness(0.85);
+                transition: filter 0.2s ease;
+            }
+            &:focus {
+                outline: none;
+                filter: unset;
+                transition: filter 0.2s ease;
+            }
+            &:not([audio-active="true"]) {
+                background: url("/public_html/assets/images/icons/audio-player/play.svg"), rgba(var(--player-bg), 1);
+                background-size: auto;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &[audio-active="true"] {
+                background: url("/public_html/assets/images/icons/audio-player/pause.svg"), rgba(var(--player-bg), 1);
+                background-size: auto;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        & .volume-btn {
+            position: relative;
+            background-image: url(/assets/img/volume-btn.svg);
+            background-repeat: no-repeat;
+            background-size: 0.75rem;
+            background-position: center;
+            padding: 0.875rem;
+            cursor: pointer;
+            background-color: #161616;
+            border-radius: 100%;
+            margin-right: 1.6875rem;
+            &:hover {
+                opacity: 0.75;
+                transition: all 0.4s;
+            }
+            &:focus,
+            &:active {
+                opacity: 0.5;
+                transition: all 0.4s;
+            }
+            &:not(:focus),
+            &:not(:active) {
+                opacity: 0.75;
+                transition: all 0.4s;
+            }
+        }
+        & .volume-wrap {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: rgba(var(--player-bg), 1);
+            border-radius: 50rem;
+            border: 0;
+            @media (min-width: 992px) {
+                width: 5.9375rem;
+                height: 2.1875rem;
+                padding-left: 0.75rem;
+                padding-right: 0.75rem;
+            }
+            &:hover {
+                & .audio-volume-container {
+                    @media screen and (max-width: 991px) {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+            & .volume-icon {
+                position: relative;
+                z-index: 1;
+                display: flex;
+                flex: 0 0 0.9375rem;
+                width: 0.9375rem;
+                height: 0.9375rem;
+                background: url("/public_html/assets/images/icons/audio-player/default.svg");
+                background-size: auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+            }
+            & .audio-volume {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 0.1875rem;
+                height: 5.625rem;
+                border-radius: 0.625rem;
+                overflow: hidden;
+                @media (min-width: 992px) {
+                    width: 100%;
+                    max-width: 5.625rem;
+                    height: 0.1875rem;
+                    margin-left: 0.625rem;
+                }
+                &-container {
+                    @media screen and (max-width: 991px) {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 0;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        width: 2.5rem;
+                        height: 9.6875rem;
+                        padding-top: 0.75rem;
+                        padding-bottom: 2.625rem;
+                        background: rgba(var(--player-bg), 1);
+                        border-radius: 50rem;
+                        border: 0;
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: translate(0, 0);
+                    }
+                    @media (min-width: 992px) {
+                        width: 100%;
+                        padding-right: 0.75rem;
+                    }
+                }
+                & .volume-default {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(var(--player-color), 0.2);
+                    opacity: 0.5;
+                    border-radius: 0.625rem;
+                }
+                & .volume-line {
+                    --volume-size: 0.1875rem;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 100%;
+                    background-color: rgba(var(--player-color), 1);
+                    border-radius: 0.625rem;
+                }
+            }
+        }
+        & .time-place {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: 400;
+            font-size: 0.75rem;
+            line-height: 1.25rem;
+            max-width: 100%;
+            @media (min-width: 992px) {
+                font-size: 1rem;
+                line-height: 1.625rem;
+            }
+        }
+    }
+    &-w-100 {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        @media screen and (max-width: 767.98px) {
+            max-width: calc(100vw - 11.25rem);
+        }
+        @media (min-width: 768px) {
+            max-width: calc(100vw - 18.25rem);
+        }
+    }
+    &-wave {
+        display: flex;
+        align-items: center;
+        flex-basis: auto;
+        overflow: hidden;
+        &-wrap {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            @media (min-width: 768px) {
+                max-width: 10.125rem;
+            }
+            @media (min-width: 992px) {
+                max-width: 10.125rem;
+            }
+            @media (min-width: 1200px) {
+                max-width: 21.1875rem;
+            }
+        }
+        & > * {
+            width: 0.125rem;
+            min-width: 0.125rem;
+            background: rgba(var(--player-color), 0.2);
+            margin-left: 0.125rem;
+            border-radius: 0.0625rem;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &-progress {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            z-index: 1;
+            & > * {
+                background: rgba(var(--player-color), 1);
+            }
+        }
+    }
+}
+
+.isSafari {
+    & .audio-w-100 {
+        @media (max-width: 460px) {
+            max-width: calc(100vw - 11.25rem);
+        }
+    }
+}

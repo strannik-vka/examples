@@ -1,0 +1,83 @@
+@import "../parts/take-card.scss";
+
+.section-take {
+    --bs-section-padding: 6.875rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--bs-section-padding) 0;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 10rem;
+    }
+    &-green {
+        background-color: var(--green);
+    }
+    &-yellow {
+        background-color: var(--yellow);
+    }
+    &-white {
+        background-color: var(--white);
+    }
+    &-inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        & > .row {
+            --bs-gutter-y: 2.5rem;
+            @media (min-width: 768px) {
+                --bs-gutter-x: 7.5rem;
+                justify-content: space-between;
+            }
+        }
+    }
+    &-left {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media (min-width: 768px) {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+    &-primary {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        @media (min-width: 768px) {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+    &-cards {
+        @media (min-width: 768px) {
+            width: 23.125rem;
+        }
+        @media (min-width: 992px) {
+            width: 35rem;
+        }
+        @media (min-width: 1200px) {
+            width: 36.1875rem;
+        }
+        & > .row {
+            --bs-gutter-x: 0.625rem;
+            --bs-gutter-y: 1.5625rem;
+            @media (min-width: 768px) {
+                --bs-gutter-x: 1.5625rem;
+                --bs-gutter-y: 3.125rem;
+            }
+            @media (min-width: 1200px) {
+                --bs-gutter-y: 4.375rem;
+            }
+        }
+    }
+}

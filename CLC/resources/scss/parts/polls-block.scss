@@ -1,0 +1,42 @@
+.poll {
+    --poll-color: var(--dark-blue-rgb);
+    & .form-check {
+        min-height: 1.125rem;
+        padding-left: 2.0625rem;
+        margin-bottom: 1rem;
+        @media (min-width: 768px) {
+            margin-bottom: 0.9375rem;
+        }
+        @media (min-width: 992px) {
+            min-height: 1.5625rem;
+            padding-left: 2.8125rem;
+            margin-bottom: 1.25rem;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+        &-label {
+            font-weight: 400;
+            font-size: 0.625rem;
+            line-height: 1.25rem;
+            color: rgba(var(--poll-color), 1);
+            cursor: pointer;
+            @media (min-width: 1200px) {
+                font-size: 0.75rem;
+            }
+        }
+        &-input {
+            width: 1.125rem;
+            height: 1.125rem;
+            margin-top: 0.3125rem;
+            margin-left: -2.0625rem;
+            cursor: pointer;
+            @media (min-width: 992px) {
+                width: 1.5625rem;
+                height: 1.5625rem;
+                margin-top: 0;
+                margin-left: -2.8125rem;
+            }
+        }
+    }
+}

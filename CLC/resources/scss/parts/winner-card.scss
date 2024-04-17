@@ -1,0 +1,154 @@
+.winner-card {
+    position: relative;
+    width: 8.75rem;
+    max-width: 8.75rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.4s ease;
+    @media (min-width: 1200px) {
+        width: 15.625rem;
+        max-width: 15.625rem;
+    }
+    &-wrapper {
+        position: relative;
+        width: 100%;
+        height: 9.125rem;
+        border-radius: 0;
+        margin-bottom: 1.55rem;
+        overflow: hidden;
+        @media (min-width: 1200px) {
+            height: 16.12394rem;
+        }
+        & img,
+        & svg,
+        & canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0;
+        }
+    }
+    &-name {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 140%;
+        color: rgba(var(--dark-blue-rgb), 1);
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            line-height: 162.5%;
+        }
+    }
+    &-description {
+        font-family: "IBM Plex Serif";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 171.429%;
+        color: rgba(var(--dark-blue-rgb), 0.5);
+        margin-top: 0.88rem;
+        min-height: 6rem;
+        flex: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        overflow: hidden;
+        animation: welcomeText 2s ease;
+        transition: 0.4s ease;
+    }
+    &-link {
+        padding-top: 1.55rem;
+    }
+}
+
+.winner-header {
+    display: block;
+    & > .row {
+        --bs-gutter-x: calc(0.9375rem * 2);
+        @media (min-width: 768px) {
+            --bs-gutter-x: 2rem;
+        }
+    }
+    &-avatar {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border: 0;
+        outline: 0;
+        background-color: var(--grey);
+        @media (min-width: 768px) {
+            width: 16rem;
+            height: 16rem;
+        }
+        @media (min-width: 1200px) {
+            width: 20rem;
+            height: 20rem;
+        }
+        & img,
+        & image,
+        & object,
+        & picture,
+        & source {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    & .winner-avatar-button {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 1;
+        width: fit-content;
+        height: fit-content;
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 20rem;
+        height: 100%;
+    }
+    &-name {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        word-spacing: 100vw;
+        @media (min-width: 768px) {
+            font-size: 1.25rem;
+        }
+    }
+    &-meo {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 1.75rem;
+        margin-top: 0.5rem;
+    }
+    &-text {
+        font-size: 0.875rem;
+        line-height: 1.625rem;
+        @media (min-width: 768px) {
+            max-width: 37rem;
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+    }
+    &-social {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        height: 100%;
+        margin-top: 0.625rem;
+    }
+}

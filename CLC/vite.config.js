@@ -1,0 +1,73 @@
+import autoprefixer from 'autoprefixer';
+import { defineConfig } from 'vite';
+import laravel from 'laravel-vite-plugin';
+
+export default defineConfig({
+    plugins: [
+        laravel({
+            input: [
+                'resources/js/admin.js',
+                'resources/js/app.js',
+                'resources/js/plug.js',
+                'resources/js/pages/auth/forgot.js',
+                'resources/js/pages/auth/verify.js',
+                'resources/js/pages/auth/login.js',
+                'resources/js/pages/auth/register.js',
+                'resources/js/pages/auth/confirm.profile.js',
+                'resources/js/pages/auth/reset-password.js',
+                'resources/js/pages/profile/settings.js',
+                'resources/js/pages/profile/competition.js',
+                'resources/js/pages/profile/recommendations.js',
+                'resources/js/pages/post/index.js',
+                'resources/js/pages/post/show.js',
+                'resources/js/pages/meeting/index.js',
+                'resources/js/pages/faq.js',
+                'resources/js/pages/course/index.js',
+                'resources/js/pages/course/list.js',
+                'resources/js/pages/course/show.js',
+                'resources/js/pages/course/opinion.js',
+                'resources/js/pages/course/test.js',
+                'resources/js/pages/evaluation/index.js',
+                'resources/js/pages/evaluation/process.js',
+                'resources/js/pages/evaluation/projects.js',
+                'resources/js/pages/about.js',
+                'resources/js/pages/contest.js',
+                'resources/js/pages/index.js',
+
+                'resources/scss/app.scss',
+                'resources/scss/pages/plug.scss',
+                'resources/scss/pages/auth/forgot.scss',
+                'resources/scss/pages/auth/verify.scss',
+                'resources/scss/pages/auth/login.scss',
+                'resources/scss/pages/auth/register.scss',
+                'resources/scss/pages/auth/confirm.scss',
+                'resources/scss/pages/auth/confirm.profile.scss',
+                'resources/scss/pages/profile/settings.scss',
+                'resources/scss/pages/profile/competition.scss',
+                'resources/scss/pages/profile/recommendations.scss',
+                'resources/scss/pages/post/index.scss',
+                'resources/scss/pages/post/show.scss',
+                'resources/scss/pages/meeting/index.scss',
+                'resources/scss/pages/error/index.scss',
+                'resources/scss/pages/faq/index.scss',
+                'resources/scss/pages/course/index.scss',
+                'resources/scss/pages/course/list.scss',
+                'resources/scss/pages/course/show.scss',
+                'resources/scss/pages/course/opinion.scss',
+                'resources/scss/pages/evaluation/index.scss',
+                'resources/scss/pages/evaluation/process.scss',
+                'resources/scss/pages/evaluation/projects.scss',
+                'resources/scss/pages/about.scss',
+                'resources/scss/pages/contest.scss',
+                'resources/scss/pages/index.scss',
+            ],
+            postcss: {
+                plugins: [
+                    autoprefixer(),
+                ]
+            },
+            publicDirectory: 'public_html',
+            refresh: true,
+        }),
+    ],
+});

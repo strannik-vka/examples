@@ -1,0 +1,40 @@
+@import "./score";
+
+$block-collection: ("block", "form");
+
+.valuation {
+    @each $block in $block-collection {
+        &-#{$block} {
+            display: block;
+            & > .row {
+                --bs-gutter-x: 0.5rem;
+                --bs-gutter-y: 0.5rem;
+            }
+            &-label {
+                opacity: 0.5;
+            }
+            &-context {
+                & > .row {
+                    --bs-gutter-x: 1.75rem;
+                    --bs-gutter-y: 1.75rem;
+                    align-items: stretch;
+                }
+            }
+            &-row {
+                & > .row {
+                    --bs-gutter-x: 2rem;
+                    --bs-gutter-y: 2rem;
+                }
+            }
+            &-comment {
+                & > .row {
+                    --bs-gutter-x: 2rem;
+                    --bs-gutter-y: 2rem;
+                }
+            }
+            &-title {
+                word-spacing: 100vw;
+            }
+        }
+    }
+}

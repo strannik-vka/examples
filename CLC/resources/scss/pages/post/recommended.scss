@@ -1,0 +1,66 @@
+@import "./item.scss";
+
+.section-recommended {
+    --bs-section-padding: 6.875rem;
+    position: relative;
+    z-index: 1;
+    padding: var(--bs-section-padding) 0;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 10rem;
+    }
+    &-inner {
+        display: block;
+    }
+    &-content {
+        padding-top: 2.5rem;
+        @media (min-width: 768px) {
+            padding-top: 4.6875rem;
+        }
+        @media (min-width: 1200) {
+            padding-top: 5.3125rem;
+        }
+    }
+    &-more {
+        padding-top: 2.1875rem;
+        @media (min-width: 768px) {
+            padding-top: 3.125rem;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 3.75rem;
+        }
+    }
+}
+
+.post-recommended {
+    & > .row {
+        --bs-gutter-x: 0.9375rem;
+        --bs-gutter-y: 1.875rem;
+        @media (min-width: 768px) {
+            --bs-gutter-x: 1.25rem;
+        }
+        @media (min-width: 1200px) {
+            --bs-gutter-x: 3.75rem;
+            --bs-gutter-y: 3.75rem;
+        }
+    }
+}
+
+.post-min {
+    & > * {
+        & > * {
+            @media (max-width: 767.98px) {
+                &:nth-child(n + 3) {
+                    display: none;
+                }
+            }
+            @media (min-width: 768px) {
+                &:nth-child(n + 4) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

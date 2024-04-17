@@ -1,0 +1,57 @@
+:root {
+    --sticker-size: 2.5rem;
+    --sticker-padding-x: 2.5rem;
+    --sticker-padding-y: 2.5rem;
+    --sticker-border-radius: 100%;
+    --sticker-border-width: 0.0625rem;
+    --sticker-border-color: var(--white);
+    --sticker-background-color: var(--white);
+    --sticker-color: var(--black);
+    --sticker-font-size: 0.625rem;
+    --sticker-line-height: 145%;
+}
+
+.sticker {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    min-width: var(--sticker-size);
+    min-height: var(--sticker-size);
+    padding-top: var(--sticker-padding-y);
+    padding-bottom: var(--sticker-padding-y);
+    padding-left: var(--sticker-padding-x);
+    padding-right: var(--sticker-padding-x);
+    border-radius: var(--sticker-border-radius);
+    border-style: solid;
+    border-width: var(--sticker-border-width);
+    border-color: var(--sticker-border-color);
+    background-color: var(--sticker-background-color);
+    font-weight: 700;
+    font-size: var(--sticker-font-size);
+    line-height: var(--sticker-line-height);
+    color: var(--sticker-color);
+    text-align: center;
+    aspect-ratio: 1 / 1;
+}
+
+@each $color, $value in $colors {
+    .sticker-#{$value} {
+        --sticker-color: var(--white);
+        --sticker-background-color: var(--#{$value});
+        --sticker-border-color: var(--#{$value});
+    }
+
+    .sticker-outline-#{$value} {
+        --sticker-color: var(--white);
+        --sticker-background-color: transparent;
+        --sticker-border-color: var(--#{$value});
+        &:not(.sticker-colored),
+        &:not(.sticker-dimmed) {
+        }
+    }
+}

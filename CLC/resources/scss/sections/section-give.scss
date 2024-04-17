@@ -1,0 +1,70 @@
+@import "../parts/give-card.scss";
+
+.section-give {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6.25rem 0 6.25rem;
+    overflow: hidden;
+    & > * {
+        height: 100%;
+    }
+    &-inner {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        & > .row {
+            --bs-gutter-y: 2.5rem;
+            @media (min-width: 768px) {
+                --bs-gutter-x: 3.75rem;
+            }
+            @media (min-width: 1200px) {
+                --bs-gutter-x: 7.5rem;
+            }
+        }
+    }
+    &-left {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        & .section-give-auth {
+            display: none;
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+    }
+    &-right {
+        & .section-give-auth {
+            display: block;
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+    }
+    &-description {
+        flex: 1;
+    }
+    &-auth {
+        padding-top: 2.5rem;
+        flex: 0;
+    }
+    &-cards {
+        & > .row {
+            --bs-gutter-y: 2.3125rem;
+            & > * {
+                &:last-of-type {
+                    & > .give-card {
+                        padding-bottom: unset;
+                        border-bottom: unset;
+                    }
+                }
+            }
+        }
+    }
+}

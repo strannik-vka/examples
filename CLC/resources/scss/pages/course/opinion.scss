@@ -1,0 +1,260 @@
+// components
+@import "../../components/suggestions";
+
+// vendor
+@import "swiper/css/bundle";
+
+// parts
+@import "./parts/card-hint";
+@import "./parts/poll-block";
+@import "./parts/poll-form";
+@import "./parts/progress-block";
+@import "./parts/sticky-block";
+@import "./parts/video-playlist";
+@import "./parts/useful-list";
+
+.wrapper {
+    overflow: hidden;
+    @media (min-width: 768px) {
+        overflow: unset;
+    }
+}
+
+.section-main {
+    --section-padding-y: 3.22rem;
+    padding: var(--section-padding-y) 0;
+    @media (min-width: 1200px) {
+        --section-padding-y: 5.5rem;
+    }
+    &-row {
+        & > .row {
+            --bs-gutter-x: 1.25rem;
+        }
+    }
+    & .poll-form-qa > .row {
+        --bs-gutter-y: 2.81rem;
+    }
+    &-left {
+        position: relative;
+        flex: 0 0 100%;
+        @media (min-width: 768px) {
+            flex: 0 0 13.5rem;
+        }
+        @media (min-width: 1200px) {
+            flex: 0 0 19.875rem;
+        }
+    }
+    &-right {
+        position: relative;
+        @media (min-width: 1200px) {
+            flex: 0 0 49.75rem;
+        }
+    }
+    &-inner {
+        & > .row {
+            --bs-gutter-y: 2.19rem;
+            @media (min-width: 1200px) {
+                --bs-gutter-y: 3.13rem;
+            }
+        }
+    }
+    &-primary {
+        // margin-top: 2.19rem;
+        @media (min-width: 768px) {
+            margin-top: unset;
+        }
+        & > .row {
+            --bs-gutter-y: 2.19rem;
+            @media (min-width: 1200px) {
+                --bs-gutter-y: 3.13rem;
+            }
+        }
+    }
+    &-action {
+        & > .row {
+            align-items: stretch;
+            --bs-gutter-x: 2.19rem;
+            --bs-gutter-y: 2.19rem;
+            @media (min-width: 1200px) {
+                --bs-gutter-x: 3.13rem;
+                --bs-gutter-y: 3.13rem;
+            }
+        }
+    }
+    &-test {
+        margin-top: 1.25rem;
+        @media (min-width: 768px) {
+            margin-top: 1.875rem;
+        }
+        @media (min-width: 1200px) {
+            margin-top: 3.75rem;
+        }
+    }
+    &-links {
+        & a {
+            color: var(--dark-blue);
+            text-decoration: underline;
+            &:hover {
+                text-decoration: unset;
+            }
+        }
+        & p {
+            margin: 0;
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+    &-progress {
+        margin-bottom: 2.5rem;
+        @media (min-width: 768px) {
+            margin-bottom: 0.625rem;
+        }
+    }
+    &-samecontent {
+        margin-top: 1.875rem;
+        @media (min-width: 768px) {
+            margin-top: 2.1875rem;
+        }
+        @media (min-width: 1200px) {
+            margin-top: 3.75rem;
+        }
+    }
+    &-description {
+        font-family: "IBM Plex Serif";
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: var(--dark-blue);
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+        & p {
+            margin: unset;
+            & b,
+            & strong {
+                font-weight: 500;
+            }
+        }
+        & a {
+            color: var(--dark-blue);
+            text-decoration: underline;
+            &:hover {
+                text-decoration: unset;
+            }
+        }
+    }
+    &-content {
+        font-family: "IBM Plex Serif";
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: var(--dark-blue);
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+        & p {
+            margin: unset;
+        }
+        & a {
+            color: var(--dark-blue);
+            text-decoration: underline;
+            &:hover {
+                text-decoration: unset;
+            }
+        }
+    }
+    &-text {
+        font-family: "IBM Plex Serif";
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: var(--dark-blue);
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            line-height: 1.75rem;
+        }
+    }
+    &-title {
+        font-family: "IBM Plex Serif";
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.625rem;
+        color: var(--dark-blue);
+        margin-bottom: 1.25rem;
+        @media (min-width: 1200px) {
+            font-size: 1.125rem;
+            margin-bottom: 1.88rem;
+        }
+    }
+    &-suptitle {
+        font-family: "IBM Plex Serif";
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        color: var(--dark-blue);
+        margin-bottom: 1.25rem;
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            margin-bottom: 1.88rem;
+        }
+    }
+    &-blocktitle {
+        font-family: "IBM Plex Serif";
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.625rem;
+        color: var(--dark-blue);
+        margin-bottom: 1.25rem;
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+            margin-bottom: 1.88rem;
+        }
+    }
+    & .poll-form-agreement {
+        @media (min-width: 992px) {
+            justify-content: flex-end;
+            & .btn {
+                width: 15.625rem !important;
+            }
+        }
+    }
+    &-empty {
+        z-index: 100;
+        width: 100%;
+        min-height: 45vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--grey);
+        opacity: 1;
+        visibility: visible;
+        @media (min-width: 1200px) {
+            min-height: 65vh;
+        }
+    }
+    &-preloader {
+        z-index: 100;
+        width: 100%;
+        min-height: 45vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--grey);
+        opacity: 1;
+        visibility: visible;
+        @media (min-width: 1200px) {
+            min-height: 65vh;
+        }
+    }
+}

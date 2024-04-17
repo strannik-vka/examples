@@ -1,0 +1,229 @@
+html {
+    height: -webkit-fill-available;
+}
+
+.content {
+    height: 100%;
+}
+
+.section {
+    &-plug {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        flex: 1;
+        background-color: var(--grey);
+        transition: 0.8s ease;
+        padding: 80px 0;
+        @media (min-width: 1200px) {
+            padding: 70px 0;
+        }
+        &.switchToYellow {
+            animation-name: switchToYellow;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-fill-mode: both;
+            animation-timing-function: ease;
+            background: linear-gradient(
+                to bottom,
+                var(--grey) 0%,
+                var(--grey) 25%,
+                var(--yellow) 25%,
+                var(--yellow) 25%,
+                var(--yellow) 50%,
+                var(--green) 50%,
+                var(--green) 50%,
+                var(--green) 75%,
+                var(--green) 75%,
+                var(--green) 75%,
+                var(--grey) 75%,
+                var(--grey) 100%
+            );
+            background-size: 100% 400%;
+            background-position: 0% 0%;
+        }
+        &.switchToGreen {
+            animation-name: switchToGreen;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-fill-mode: both;
+            animation-timing-function: ease;
+            background: linear-gradient(
+                to bottom,
+                var(--grey) 0%,
+                var(--grey) 25%,
+                var(--yellow) 25%,
+                var(--yellow) 25%,
+                var(--yellow) 50%,
+                var(--green) 50%,
+                var(--green) 50%,
+                var(--green) 75%,
+                var(--green) 75%,
+                var(--green) 75%,
+                var(--grey) 75%,
+                var(--grey) 100%
+            );
+            background-size: 100% 400%;
+            background-position: 0% 0%;
+        }
+        &.switchToGrey {
+            animation-name: switchToGrey;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-fill-mode: both;
+            animation-timing-function: ease;
+            background: linear-gradient(
+                to bottom,
+                var(--grey) 0%,
+                var(--grey) 25%,
+                var(--yellow) 25%,
+                var(--yellow) 25%,
+                var(--yellow) 50%,
+                var(--green) 50%,
+                var(--green) 50%,
+                var(--green) 75%,
+                var(--green) 75%,
+                var(--green) 75%,
+                var(--grey) 75%,
+                var(--grey) 100%
+            );
+            background-size: 100% 400%;
+            background-position: 0% 0%;
+        }
+        &-inner {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            @media (min-width: 576px) and (max-width: 1199.98px) {
+                max-width: 540px;
+                margin: auto;
+            }
+        }
+        &-logotypes {
+            display: none;
+            & > .row {
+                --bs-gutter-x: 40px;
+                align-items: center;
+                & > * {
+                    & > * {
+                        min-width: 100%;
+                        min-height: 76px;
+                        & > * {
+                            // display: flex;
+                            // min-height: 76px;
+                            display: flex;
+                            min-height: 100%;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: center;
+                        }
+                    }
+                }
+                & > *:first-of-type {
+                    & > * {
+                        min-width: 76px;
+                        margin-right: 10px;
+                    }
+                }
+                & > *:nth-child(2) {
+                    & > * {
+                        min-width: 162px;
+                    }
+                }
+                & > *:nth-child(3) {
+                    & > * {
+                        min-width: 109px;
+                    }
+                }
+            }
+            @media (min-width: 1200px) {
+                display: block;
+            }
+        }
+        &-title {
+            display: flex;
+            justify-content: center;
+            min-height: 108px;
+            text-align: center;
+            @media (min-width: 1200px) {
+                justify-content: flex-start;
+                min-height: 222px;
+                margin-top: auto;
+                padding-top: 60px;
+                text-align: left;
+            }
+        }
+        &-text {
+            display: flex;
+            justify-content: center;
+            min-height: 130px;
+            padding: 42px 0 0;
+            text-align: center;
+            @media (min-width: 1200px) {
+                justify-content: flex-start;
+                min-height: 112px;
+                padding: 40px 0 0;
+                text-align: left;
+            }
+        }
+        &-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            @media (min-width: 1200px) {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                z-index: 1;
+                align-items: stretch;
+                justify-content: stretch;
+                width: 518px;
+                height: auto;
+                margin-top: unset;
+                transform: translate(0, -50%);
+            }
+            & > * {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                @media (min-width: 1200px) {
+                    text-align: left;
+                }
+            }
+        }
+        &-date {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 34px;
+            min-height: 20px;
+            z-index: 1;
+            transform: translate(0, 0);
+            @media (min-width: 1200px) {
+                top: unset;
+                left: unset;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        &-social {
+            position: absolute;
+            top: 0;
+            right: 0;
+            min-width: 35px;
+            min-height: 35px;
+            z-index: 1;
+            transform: translate(0, 0);
+            @media (min-width: 1200px) {
+                min-width: 39px;
+                min-height: 39px;
+            }
+        }
+    }
+}

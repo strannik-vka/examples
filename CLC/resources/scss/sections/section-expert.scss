@@ -1,0 +1,49 @@
+@import "../parts/expert-card.scss";
+@import "../parts/teacher-card.scss";
+@import "../parts/expert.swiper.pagination.scss";
+
+.section-expert {
+    --bs-section-padding: 6.875rem;
+    position: relative;
+    z-index: 1;
+    padding: var(--bs-section-padding) 0;
+    overflow: hidden;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 10rem;
+    }
+    & .swiper-tab {
+        padding-top: 2.5rem;
+        @media (min-width: 768px) {
+            padding-top: 4.6875rem;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 5.3125rem;
+        }
+    }
+    &-inner {
+        position: relative;
+        padding-top: 2.5rem;
+        @media (min-width: 768px) {
+            padding-top: 4.9063rem;
+        }
+        @media (min-width: 1200px) {
+            padding-top: 5.3125rem;
+        }
+    }
+    &-outer {
+        padding-top: 2.1875rem;
+        @media (min-width: 1200px) {
+            padding-top: 3.75rem;
+        }
+    }
+    .swiper-teacher {
+        .swiper-wrapper {
+            .swiper-slide {
+                width: max-content !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.contest-banner {
+    --contest-banner-padding-x: 0.9375rem;
+    --contest-banner-padding-y: 0.9375rem;
+    position: relative;
+    display: block;
+    z-index: 1;
+    background-color: var(--white);
+    padding: var(--contest-banner-padding-y) var(--contest-banner-padding-x);
+    overflow: hidden;
+    @media (min-width: 1200px) {
+        --contest-banner-padding-x: 1.25rem;
+        --contest-banner-padding-y: 1.25rem;
+        width: 48.5rem;
+    }
+    &-winner {
+        background-color: var(--green);
+    }
+    &-inner {
+        & > .row {
+            align-items: center;
+            --bs-gutter-y: 1.25rem;
+            --bs-gutter-x: 0.625rem;
+            @media (min-width: 768px) {
+                --bs-gutter-x: 1.625rem;
+                justify-content: space-between;
+            }
+            @media (min-width: 1200px) {
+                --bs-gutter-x: 2.25rem;
+            }
+        }
+    }
+}

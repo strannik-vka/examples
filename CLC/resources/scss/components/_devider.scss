@@ -1,0 +1,10 @@
+.devider {
+    border-top: 0.0625rem solid;
+    border-color: inherit;
+    &-dark {
+        border-color: var(--dark-blue);
+    }
+    &-x2 {
+        border-top: 0.125rem solid;
+    }
+}

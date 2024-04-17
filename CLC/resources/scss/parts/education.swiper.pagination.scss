@@ -1,0 +1,47 @@
+.education-pagination {
+    position: relative;
+    height: min-content !important;
+    --swiper-pagination-top: 0;
+    --swiper-pagination-bottom: 0;
+    left: 100%;
+    z-index: 110;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    @media (min-width: 768px) {
+        width: 22.5rem !important;
+        --swiper-pagination-top: unset;
+        --swiper-pagination-bottom: 2.5rem;
+        left: 65% !important;
+        right: 35%;
+        transform: translate(0, 0);
+    }
+    @media (min-width: 992px) {
+        width: 320px !important;
+        --swiper-pagination-top: unset;
+        --swiper-pagination-bottom: 80px;
+    }
+    @media (min-width: 1200px) {
+        width: 23.75rem !important;
+        left: 68% !important;
+        right: 32%;
+        --swiper-pagination-top: unset;
+        --swiper-pagination-bottom: 7.5rem;
+    }
+    & .swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-size);
+        height: var(--swiper-pagination-bullet-size);
+        --swiper-pagination-bullet-width: 0.5rem;
+        --swiper-pagination-bullet-size: 0.3125rem;
+        --swiper-pagination-bullet-horizontal-gap: 0.25rem;
+        background-color: rgba(var(--dark-blue-rgb), 0.2);
+        transition: 0.2s ease;
+        &-active {
+            width: var(--swiper-pagination-bullet-width);
+            height: var(--swiper-pagination-bullet-width);
+            background-color: rgba(var(--dark-blue-rgb), 1);
+            transition: 0.2s ease;
+        }
+    }
+}

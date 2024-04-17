@@ -1,0 +1,86 @@
+.poll {
+    --poll-color: var(--dark-blue-rgb);
+    width: 100%;
+    padding: 0.9375rem;
+    margin: 0;
+    background: var(--white);
+    border-radius: 0;
+    @media (min-width: 992px) {
+        padding: 1.5625rem;
+    }
+    &-question {
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 155%;
+        color: rgba(var(--poll-color), 1);
+        letter-spacing: 0.02em;
+        margin-bottom: 0.625rem;
+        @media (min-width: 992px) {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+        @media (min-width: 1200px) {
+            font-size: 1.125rem;
+            line-height: 150%;
+            margin-bottom: 0.625rem;
+        }
+    }
+    &-type {
+        font-weight: 700;
+        font-size: 0.6875rem;
+        line-height: 1rem;
+        color: rgba(var(--poll-color), 0.5);
+        margin-bottom: 1rem;
+        @media (min-width: 992px) {
+            line-height: 1.25rem;
+            margin-bottom: 1.5625rem;
+        }
+        @media (min-width: 1200px) {
+            font-size: 0.75rem;
+            margin-bottom: 1.5625rem;
+        }
+    }
+    &-inputs {
+        --bs-gutter-x: 1rem;
+        --bs-gutter-y: 1rem;
+    }
+    &-answer {
+        --bs-gutter-x: 0.625rem;
+        align-items: center;
+        min-height: 1.3125rem;
+        @media (min-width: 992px) {
+            min-height: 1.75rem;
+        }
+        & .form-check-label {
+            margin-bottom: 0.3125rem;
+            cursor: default;
+        }
+    }
+    &-percent {
+        flex: 0 0 2.1875rem;
+        width: 2.1875rem;
+        height: 1.3125rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        font-weight: 400;
+        font-size: 0.6875rem;
+        line-height: 0;
+        color: rgba(var(--green), 0.5);
+        letter-spacing: 0.02em;
+        text-align: right;
+        @media (min-width: 992px) {
+            height: 1.75rem;
+            font-size: 0.75rem;
+        }
+    }
+    & .progress {
+        height: 0.125rem;
+        &-bar {
+            height: 0.125rem;
+            border-radius: 0;
+            background: rgba(var(--green-rgb), 1);
+        }
+    }
+}

@@ -1,0 +1,20 @@
+:root {
+    --hr-height: 0.0625rem;
+    --hr-background-color: var(--white-rgb);
+    --hr-background-color-opacity: 1;
+}
+
+.hr {
+    background-color: rgba(var(--hr-background-color), var(--hr-background-color-opacity));
+    height: var(--hr-height);
+    border: none;
+    &-accent {
+        background-color: rgba(var(--accent-color), var(--hr-background-color-opacity));
+    }
+    &-light {
+        --hr-background-color: var(--white-rgb);
+    }
+    &-dark {
+        --hr-background-color: var(--black-rgb);
+    }
+}

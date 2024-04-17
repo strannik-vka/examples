@@ -1,0 +1,75 @@
+@import "../parts/winner-card.scss";
+
+.section-winners {
+    --bs-section-padding: 6.875rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--bs-section-padding) 0;
+    @media (min-width: 768px) {
+        --bs-section-padding: 7.5rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 6.31rem;
+    }
+    &-green {
+        background-color: var(--green);
+    }
+    &-inner {
+        position: relative;
+        z-index: 1;
+        padding-top: 2.5rem;
+        @media (min-width: 1200px) {
+            padding-top: 3.31rem;
+        }
+    }
+    .swiper-winner {
+        .swiper-wrapper {
+            .swiper-slide {
+                width: max-content !important;
+                height: 100% !important;
+            }
+        }
+        .winner-btn {
+            width: 1.8125rem;
+            height: 1.8125rem;
+            cursor: pointer;
+            @media (min-width: 768px) {
+                width: 2.8125rem;
+                height: 2.8125rem;
+            }
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            &:is(.swiper-button-disabled) {
+                opacity: 0.5;
+            }
+        }
+        .swiper-nav {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin-top: 3.56rem;
+            & > .row {
+                --bs-gutter-x: 0.5rem;
+            }
+        }
+        .winner-scrollbar {
+            --swiper-scrollbar-drag-bg-color: var(--yellow);
+            --swiper-scrollbar-border-radius: 2.5rem;
+            --swiper-scrollbar-margin-left: 2.06rem;
+            display: flex;
+            align-items: center;
+            width: calc(100% - var(--swiper-scrollbar-margin-left));
+            margin-left: var(--swiper-scrollbar-margin-left);
+            height: 100%;
+            & .swiper-scrollbar-drag {
+                height: 0.1875rem;
+            }
+        }
+    }
+}

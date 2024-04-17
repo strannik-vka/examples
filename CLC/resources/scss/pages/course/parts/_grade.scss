@@ -1,0 +1,107 @@
+@import "./valuation";
+@import "./valuation-card";
+@import "./username-block";
+
+.grade {
+    &-block {
+        position: relative;
+        z-index: 1;
+        display: block;
+        &-nav {
+            border-bottom: 0.125rem solid rgba(var(--dark-blue-rgb), 0.2);
+            & > .row {
+                --bs-gutter-x: 0;
+                --bs-gutter-y: 0;
+            }
+            &-link {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                appearance: none;
+                border: 0;
+                padding: 0.625rem 1.275rem;
+                background-color: var(--grey);
+                font-family: "Stratos LC";
+                font-weight: 500;
+                font-size: 0.75rem;
+                line-height: 1.25rem;
+                color: rgba(var(--dark-blue-rgb), 0.2);
+                text-align: center;
+                text-transform: uppercase;
+                cursor: pointer;
+                pointer-events: all;
+                user-select: none;
+                transition: 0.2s ease-in-out;
+                @media (min-width: 1200px) {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    padding: 0.8125rem 1.875rem;
+                }
+                &.active {
+                    background-color: var(--white);
+                    color: rgba(var(--dark-blue-rgb), 1);
+                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+        &-content {
+            background-color: var(--white);
+        }
+        &-tab {
+            padding: 1rem 1.25rem;
+            @media (min-width: 1200px) {
+                padding: 2rem 2.5rem;
+            }
+        }
+    }
+    &-status {
+        & > .row {
+            --bs-gutter-x: 2rem;
+            --bs-gutter-y: 2rem;
+            align-items: center;
+            @media (min-width: 992px) {
+                --bs-gutter-x: 5rem;
+                --bs-gutter-y: 5rem;
+            }
+        }
+        &-title {
+            font-family: "Stratos LC";
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+        &-description {
+            padding-top: 1.5rem;
+        }
+        &-icon {
+            position: relative;
+            z-index: 1;
+            display: block;
+            width: 100%;
+            height: 14.87494rem;
+            @media (min-width: 992px) {
+                width: 16rem;
+                height: 14.87494rem;
+            }
+            @media (min-width: 1200px) {
+                width: 21.5625rem;
+                height: 15.87494rem;
+            }
+            & img,
+            & image,
+            & picture {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                @media (min-width: 992px) {
+                    width: unset;
+                }
+            }
+        }
+    }
+}

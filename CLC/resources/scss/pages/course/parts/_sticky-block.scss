@@ -1,0 +1,18 @@
+.sticky-block {
+    position: relative;
+    width: 100%;
+    @media (min-width: 768px) {
+        position: sticky;
+        top: 3.75rem;
+        max-width: 16rem;
+    }
+    @media (min-width: 1200px) {
+        max-width: 22.625rem;
+    }
+    & > .row {
+        --bs-gutter-y: 2.19rem;
+        @media (min-width: 1200px) {
+            --bs-gutter-y: 3.13rem;
+        }
+    }
+}

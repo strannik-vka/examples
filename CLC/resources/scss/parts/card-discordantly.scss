@@ -1,0 +1,54 @@
+.card {
+    &-discordantly {
+        --card-size: 10.8125rem;
+        --card-padding-x: 0.625rem;
+        --card-padding-y: 0.625rem;
+        --card-bg: var(--white);
+        --card-border-color: rgba(var(--dark-blue-rgb), 0.2);
+        --card-border-size: 0.0625rem;
+        --card-border-style: solid;
+        position: relative;
+        z-index: 1;
+        width: var(--card-size);
+        height: var(--card-size);
+        padding: var(--card-padding-y) var(--card-padding-x);
+        border: var(--card-border-size) var(--card-border-style) var(--card-border-color);
+        background-color: var(--card-bg);
+        @media screen and (max-width: 991.98px) {
+            cursor: pointer;
+        }
+        @media (min-width: 992px) {
+            --card-size: 14.625rem;
+        }
+        @media (min-width: 1200px) {
+            --card-size: 18.3125rem;
+        }
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            & > * {
+                &:first-of-type {
+                    padding-top: unset;
+                }
+                &:not(:first-of-type) {
+                    padding-top: 0.94rem;
+                    @media (min-width: 992px) {
+                        padding-top: 1.56rem;
+                    }
+                }
+            }
+        }
+        &-description {
+            & > p {
+                &:last-of-type {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

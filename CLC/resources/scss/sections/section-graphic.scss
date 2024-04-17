@@ -1,0 +1,61 @@
+@import "./../parts/flipping-card.scss";
+
+.section-graphic {
+    --bs-section-padding: 3.4375rem;
+    position: relative;
+    z-index: 1;
+    padding: var(--bs-section-padding) 0 calc(var(--bs-section-padding) * 2);
+    @media (min-width: 768px) {
+        --bs-section-padding: 3.75rem;
+    }
+    @media (min-width: 1200px) {
+        --bs-section-padding: 5rem;
+    }
+    &-inner {
+        display: block;
+    }
+    &-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 2.5rem;
+        @media (min-width: 768px) {
+            min-height: 19.6875rem;
+        }
+        @media (min-width: 992px) {
+            min-height: 23.4375rem;
+        }
+        @media (min-width: 1200px) {
+            min-height: 26.875rem;
+        }
+        @media (min-width: 142.5rem) {
+            min-height: 27.8125rem;
+        }
+        & > * {
+            &:nth-child(1),
+            &:nth-child(3) {
+                transform: translateY(2.3125rem);
+            }
+        }
+        @media (min-width: 768px) {
+            padding-top: 75px;
+            & > * {
+                &:nth-child(1) {
+                    transform: translateY(2.3125rem);
+                }
+                &:nth-child(2) {
+                    transform: translateY(0);
+                }
+                &:nth-child(3) {
+                    transform: translateY(4.1875rem);
+                }
+                &:nth-child(4) {
+                    transform: translateY(1.125rem);
+                }
+            }
+        }
+        @media (min-width: 1200px) {
+            padding-top: 5.3125rem;
+        }
+    }
+}

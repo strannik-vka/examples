@@ -1,0 +1,100 @@
+html,
+body {
+    background: var(--yellow);
+}
+
+.header,
+.footer,
+.mobile-menu {
+    display: none !important;
+}
+
+.content {
+    padding: unset !important;
+}
+
+.section-error {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    @media (min-width: 768px) {
+        padding-top: 4.6875rem;
+        padding-bottom: 4.6875rem;
+    }
+    &-inner {
+        --bs-gutter-x: 1.25rem;
+        --bs-gutter-y: 2.8125rem;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width: 768px) {
+            --bs-gutter-y: 3.4375rem;
+        }
+        @media (min-width: 992px) {
+            --bs-gutter-y: 4.0625rem;
+        }
+        @media (min-width: 1200px) {
+            --bs-gutter-y: 4.6875rem;
+        }
+    }
+    &-title {
+        font-family: "Stratos LC";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 7rem;
+        line-height: 150%;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--dark-blue);
+        @media (min-width: 768px) {
+            font-size: 10rem;
+        }
+    }
+    &-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 200px;
+        height: 100%;
+        @media (min-width: 768px) {
+            width: 15rem;
+        }
+        @media (min-width: 992px) {
+            width: 18.75rem;
+        }
+        @media (min-width: 1200px) {
+            width: 22.5rem;
+        }
+        & img,
+        & image,
+        & picture,
+        & svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & a {
+            font-family: "Stratos LC";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 151%;
+            text-align: center;
+            text-transform: uppercase;
+            color: var(--dark-blue);
+            text-decoration: underline;
+            text-decoration-skip-ink: 0.3125rem;
+        }
+    }
+    &-text {
+    }
+}

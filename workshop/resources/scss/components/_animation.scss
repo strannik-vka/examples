@@ -1,0 +1,205 @@
+@keyframes welcome {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes show-in-top {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hide-in-bottom {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+@keyframes show-in-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes collapse-show {
+    from {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        max-height: 100%;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes show-in {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes remove-overflow {
+    0% {
+        overflow: hidden;
+    }
+    100% {
+        overflow: unset;
+    }
+}
+
+@keyframes modal-show-in-top {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes modal-hide-in-bottom {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animate-visiblity-show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate-visiblity-hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animate-process-show {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.animate-process-show {
+    animation-name: animate-process-show;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-process-hide {
+    0% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.animate-process-hide {
+    animation-name: animate-process-hide;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+}
+
+.animate-finish-show {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.animate-finish-hide {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% - var(--bs-column-gap)));
+    }
+}
+
+@keyframes skeleton-animation {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.marquee {
+    animation: scroll 30s linear infinite;
+}
+
+.reverce {
+    animation-direction: reverse;
+}
+
+.infiniteRotation {
+    animation-name: infiniteRotation;
+    animation-duration: 2.5s;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(0deg);
+}
+
+@keyframes infiniteRotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
