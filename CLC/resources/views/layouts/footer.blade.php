@@ -17,16 +17,7 @@
                                 <div class="nav-footer">
                                     <div class="row">
                                         <div class="col-auto">
-                                            <a href="{{ Route('about') }}" class="nav-footer-link">О проекте</a>
-                                        </div>
-                                        <div class="col-auto">
-                                            <a href="{{ Route('leadership.contest') }}" class="nav-footer-link">Конкурс</a>
-                                        </div>
-                                        <div class="col-auto">
-                                            <a href="{{ Route('post.index') }}" class="nav-footer-link">Новости</a>
-                                        </div>
-                                        <div class="col-auto">
-                                            <a href="{{ Route('faq.index') }}" class="nav-footer-link">Вопросы/ответы</a>
+                                            <a href="https://creative-way.ru/" class="nav-footer-link" target="_blank">Кто мы</a>
                                         </div>
                                         <div class="col-auto">
                                             <a href="{{ Route('agreement.user') }}" target="_blank" class="nav-footer-link">Пользовательское соглашение</a>
@@ -42,7 +33,11 @@
                             </div>
                             <div class="d-none d-md-block col-12">
                                 <div class="text-7">
-                                    <?php echo date('Y') ?> © ИП Гребенева Е.Н. Все права защищены
+                                    <?php echo date('Y') ?> © Все права защищены <br>
+                                    ИП Гребенева Елена Николаевна <br>
+                                    ИНН 431201709430 <br>
+                                    ОГРНИП 321435000038274 <br>
+                                    Москва, ул. Саврасова, д.7, оф.3
                                 </div>
                             </div>
                         </div>
@@ -237,7 +232,11 @@
                             </div>
                             <div class="d-block d-md-none col-12">
                                 <div class="text-7">
-                                    <?php echo date('Y') ?> © ИП Гребенева Е.Н. Все права защищены
+                                    <?php echo date('Y') ?> © Все права защищены <br>
+                                    ИП Гребенева Елена Николаевна <br>
+                                    ИНН 431201709430 <br>
+                                    ОГРНИП 321435000038274 <br>
+                                    Москва, ул. Саврасова, д.7, оф.3
                                 </div>
                             </div>
                         </div>

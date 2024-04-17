@@ -27,7 +27,7 @@
             </div>
             <div class="section-open-button wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                 @guest
-                <a href="{{ Route('register') }}?redirectUrl={{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-white btn-wider w-xs-100 w-sm-100 w-md-auto">Зарегистрироваться</a>
+                <a href="{{ Route('courses.list.item', ['id' => 1]) }}" target="_blank" class="btn btn-white btn-wider w-xs-100 w-sm-100 w-md-auto">Начать обучение</a>
                 @else
                 <a href="{{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-white btn-wider w-xs-100 w-sm-100 w-md-auto">Начать обучение</a>
                 @endif

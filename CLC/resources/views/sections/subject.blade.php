@@ -7,7 +7,7 @@
                 @endforeach
                 <div class="subject-block-item">
                     <div class="subject-block-name">
-                        <span class="text-green">Очный интенсив - Москва</span>
+                        <span>Москва</span>
                     </div>
                 </div>
                 @foreach(['Санкт-Петербург', 'Казань', 'Санкт-Петербург', 'Казань', 'Санкт-Петербург', 'Казань', 'Санкт-Петербург', 'Казань', 'Санкт-Петербург', 'Казань'] as $city)
@@ -20,7 +20,7 @@
                 @endforeach
                 <div class="subject-block-item">
                     <div class="subject-block-name">
-                        <span class="text-green">Очный интенсив - Ульяновск</span>
+                        <span>Ульяновск</span>
                     </div>
                 </div>
                 @foreach(['Владивосток', 'Тверь', 'Волгоград', 'Владивосток', 'Тверь', 'Волгоград', 'Владивосток', 'Тверь', 'Волгоград', 'Владивосток', 'Тверь', 'Волгоград'] as $city)
@@ -33,7 +33,7 @@
                 @endforeach
                 <div class="subject-block-item">
                     <div class="subject-block-name">
-                        <span class="text-green">Очный интенсив - Тюмень</span>
+                        <span>Тюмень</span>
                     </div>
                 </div>
                 @foreach(['Тюмень', 'Саратов', 'Киров', 'Ярославль', 'Тюмень', 'Саратов', 'Киров', 'Ярославль', 'Тюмень', 'Саратов', 'Киров', 'Ярославль'] as $city)
@@ -46,7 +46,7 @@
                 @endforeach
                 <div class="subject-block-item">
                     <div class="subject-block-name">
-                        <span class="text-green">Очный интенсив - Красноярск</span>
+                        <span>Красноярск</span>
                     </div>
                 </div>
                 @foreach(['Тюмень', 'Сочи', 'Тула', 'Калининград', 'Тюмень', 'Сочи', 'Тула', 'Калининград', 'Тюмень', 'Сочи', 'Тула', 'Калининград'] as $city)

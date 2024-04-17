@@ -27,6 +27,7 @@ import '../../../js-modules/AjaxForm';
 import '../../../js-modules/items';
 import '../../../js-modules/HrefOnclick';
 import '../../../js-modules/autocompleteOff';
+import '../../../js-modules/URLParam';
 
 // project modules
 import './modules/menu';

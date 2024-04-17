@@ -192,6 +192,8 @@
 @endsection
 
 @section('modals')
+@include('course.modal.payment')
+@include('course.modal.check-access-course')
 <div class="modal" data-modal-id="settingUpdateModal">
     <div class="modal-dialog modal-notify">
         <div class="modal-content">

@@ -360,14 +360,14 @@
             <li content="telephone=no">ОГРН: 321435000038274</li>
         </ul>
         <ul class="text-3 pl-0" style="list-style-type: '';">
-            <li content="telephone=no">АО "АЛЬФА-БАНК"</li>
-            <li content="telephone=no">р/с 40802810302630003119</li>
-            <li content="telephone=no">к/с 30101810200000000593 в ГУ БАНКА РОССИИ ПО ЦФО</li>
-            <li content="telephone=no">БИК 044525593</li>
+            <li content="telephone=no">ПАО Сбербанк</li>
+            <li content="telephone=no">р/с: 40802810338000399319</li>
+            <li content="telephone=no">К/с: 30101810400000000225</li>
+            <li content="telephone=no">БИК: 044525225</li>
         </ul>
 
         <br>
-        <a href="/docs/Oferta_o_zaklyuchenii_dogovora_okazania_uslug_po_predostavleniyu_dostupa.pdf" class="btn btn-primary" target="_blank" alt="document">Открыть документ PDF</a>
+        <a href="/docs/offer.pdf" class="btn btn-primary" target="_blank" alt="document">Открыть документ PDF</a>
     </div>
 </section>
 @endsection

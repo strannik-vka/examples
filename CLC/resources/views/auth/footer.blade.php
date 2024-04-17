@@ -15,7 +15,8 @@
             </div>
             <div class="col-12">
                 <div class="auth-footer-copyrite text-left text-md-center">
-                    Лагерь&nbsp;креативных&nbsp;лидеров. При поддержке Президентского&nbsp;фонда&nbsp;культурных&nbsp;инициатив.
+                    Лагерь креативных лидеров. <br>
+                    В 2023 году реализовывался при поддержке <br class="d-inline d-xl-none">Президентского фонда культурных инициатив.
                 </div>
             </div>
         </div>

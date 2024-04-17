@@ -11,11 +11,11 @@
     padding: var(--bs-section-padding-top) 0 var(--bs-section-padding-bottom);
     @media (min-width: 768px) {
         --bs-section-padding-top: 4.47rem;
-        --bs-section-padding-bottom: 4.47rem;
+        --bs-section-padding-bottom: 8.94rem;
     }
     @media (min-width: 1200px) {
         --bs-section-padding-top: 8.94rem;
-        --bs-section-padding-bottom: 4.47rem;
+        --bs-section-padding-bottom: 10rem;
     }
     &-content {
         position: relative;

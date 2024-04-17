@@ -8,7 +8,8 @@
     z-index: 1;
     display: block;
     padding: var(--card-padding-top) 0 var(--card-padding-bottom);
-    border-top: var(--card-border-width) var(--card-border-style) var(--card-border-color);
+    border-top: var(--card-border-width) var(--card-border-style)
+        var(--card-border-color);
     @media (min-width: 1200px) {
         --card-padding-top: 1.88rem;
         --card-padding-bottom: 3.75rem;
@@ -80,6 +81,7 @@
             order: 3;
         }
         @media (min-width: 1200px) {
+            width: 21.063rem;
             padding-left: 4.06rem;
         }
         & > * {

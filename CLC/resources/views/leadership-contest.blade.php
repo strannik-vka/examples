@@ -14,15 +14,15 @@
                 <h1>
                     Конкурс <br>
                     креативных <br>
-                    лидеров <br>
+                    лидеров 2023<br>
                     завершен
                 </h1>
             </div>
             <div class="section-main-callback wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
                 @guest
-                <a href="{{ Route('register') }}?redirectUrl={{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-primary btn-wider w-xs-100">Учиться онлайн</a>
+                <a href="{{ Route('courses.list.item', ['id' => 1]) }}" target="_blank" class="btn btn-primary btn-wider w-xs-100">Начать обучение</a>
                 @else
-                <a href="{{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-primary btn-wider w-xs-100">Учиться онлайн</a>
+                <a href="{{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-primary btn-wider w-xs-100">Начать обучение</a>
                 @endif
             </div>
         </div>
@@ -47,7 +47,8 @@
                         <div class="section-take-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                             <h4>
                                 Кто может <br>
-                                принять участие
+                                принимать участие <br>
+                                в конкурсе
                             </h4>
                         </div>
                         <div class="section-take-link wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">

@@ -6,6 +6,7 @@ use App\Classes\Constructor;
 use App\Classes\ProgressMap;
 use App\Helpers\CourseHelper;
 use App\Helpers\LessonAnalyticHelper;
+use App\Helpers\PaymentHelper;
 use App\Http\Controllers\Controller;
 use App\Models\Course;
 use App\Models\Lesson;
@@ -29,6 +30,10 @@ class CourseController extends Controller
 
         if (!$course) {
             abort(404);
+        }
+
+        if (PaymentHelper::userPaymentRequired($course)) {
+            return redirect(route('profile.settings') . '?modal=paidCourseAccess&course_id=' . $course->id);
         }
 
         $lesson = $request->lesson_id

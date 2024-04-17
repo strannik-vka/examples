@@ -58,9 +58,6 @@
                         </div>
                         @else
                         <div class="col-12">
-                            <a href="{{ Route('about') }}" class="nav-mobile-link" menu-close>О проекте</a>
-                        </div>
-                        <div class="col-12">
                             <a href="{{ Route('courses.list.item', ['id' => 1]) }}" class="nav-mobile-link" menu-close>О курсе</a>
                         </div>
                         <div class="col-12">
@@ -68,9 +65,6 @@
                         </div>
                         <div class="col-12">
                             <a href="{{ Route('post.index') }}" class="nav-mobile-link" menu-close>Новости</a>
-                        </div>
-                        <div class="col-12">
-                            <a href="{{ Route('faq.index') }}" class="nav-mobile-link" menu-close>Вопросы/ответы</a>
                         </div>
                         @endif
                         <div class="col-12">

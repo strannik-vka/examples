@@ -33,6 +33,7 @@ export default defineConfig({
                 'resources/js/pages/about.js',
                 'resources/js/pages/contest.js',
                 'resources/js/pages/index.js',
+                'resources/js/pages/landing/reels.js',
 
                 'resources/scss/app.scss',
                 'resources/scss/pages/plug.scss',
@@ -60,6 +61,7 @@ export default defineConfig({
                 'resources/scss/pages/about.scss',
                 'resources/scss/pages/contest.scss',
                 'resources/scss/pages/index.scss',
+                'resources/scss/pages/landing/reels.scss',
             ],
             postcss: {
                 plugins: [

@@ -5,25 +5,27 @@
 @import "../../sections/section-graphic.scss";
 @import "../../sections/section-expert.scss";
 @import "../../sections/section-open.scss";
+@import "../../sections/section-opinions.scss";
 @import "../../sections/section-program.scss";
 @import "../../sections/section-mentors.scss";
+@import "../../sections/section-faq.scss";
 
 // parts
 @import "./parts/ability-list.scss";
 @import "./parts/matches-list.scss";
 @import "../../parts/take-card.scss";
 
-.content {
-    & .section-content {
-        &:not(:last-of-type),
-        &:not(.section-open) {
-            &:nth-child(n + 2) {
-                padding-top: calc(var(--bs-section-padding) * 0);
-                padding-top: calc(var(--bs-section-padding-top) * 0);
-            }
-        }
-    }
-}
+// .content {
+//     & .section-content {
+//         &:not(:last-of-type),
+//         &:not(.section-open) {
+//             &:nth-child(n + 2) {
+//                 padding-top: calc(var(--bs-section-padding) * 0);
+//                 padding-top: calc(var(--bs-section-padding-top) * 0);
+//             }
+//         }
+//     }
+// }
 
 .section-main {
     --section-padding-top: 4.0625rem;

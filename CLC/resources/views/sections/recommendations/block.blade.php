@@ -85,7 +85,7 @@
                 <div class="d-block d-md-none">
                     <div class="swiper-container swiper-books">
                         <div class="swiper-wrapper">
-                            @for($i = 1; $i < 28; $i++) <div class="swiper-slide"> @include('sections.recommendations.book', ['book' => true]) </div> @endfor
+                            @for($i = 1; $i < 38; $i++) <div class="swiper-slide"> @include('sections.recommendations.book', ['book' => true]) </div> @endfor
                     </div>
                     <div class="swiper-nav">
                         <div class="row">
@@ -110,7 +110,7 @@
                 <div class="container">
                     <div class="recommendations-books">
                         <div class="row">
-                            @for ($i = 1; $i < 28; $i++) <div class="col-12 col-lg-6"> @include('sections.recommendations.book', ['book' => true]) </div> @endfor
+                            @for ($i = 1; $i < 38; $i++) <div class="col-12 col-lg-6"> @include('sections.recommendations.book', ['book' => true]) </div> @endfor
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@
             <div class="d-block d-md-none">
                 <div class="swiper-container swiper-films">
                     <div class="swiper-wrapper">
-                        @for($i = 1; $i < 9; $i++) <div class="swiper-slide"> @include('sections.recommendations.film', ['film' => true]) </div> @endfor
+                        @for($i = 1; $i < 17; $i++) <div class="swiper-slide"> @include('sections.recommendations.film', ['film' => true]) </div> @endfor
                 </div>
                 <div class="swiper-nav">
                     <div class="row">
@@ -187,7 +187,7 @@
             <div class="container">
                 <div class="recommendations-films">
                     <div class="row">
-                        @for ($i = 1; $i < 9; $i++) <div class="col-12 col-lg-6"> @include('sections.recommendations.film', ['film' => true]) </div> @endfor
+                        @for ($i = 1; $i < 17; $i++) <div class="col-12 col-lg-6"> @include('sections.recommendations.film', ['film' => true]) </div> @endfor
                 </div>
             </div>
         </div>

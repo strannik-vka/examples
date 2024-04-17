@@ -1,7 +1,8 @@
 @import "../parts/card-discordantly.scss";
 @import "../parts/collapse-card.scss";
 
-.section-program {
+.section-program,
+.section-faq {
     position: relative;
     z-index: 1;
     &-header {

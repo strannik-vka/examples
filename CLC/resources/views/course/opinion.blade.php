@@ -40,8 +40,8 @@
                     <div class="section-main-primary">
                         <div class="row">
                             <div class="col-12">
-                                <div class="badge w-100 text-left" style="background:#ffff00;white-space:normal;">
-                                    Внимание! Для получения сертификата просим проверить актуальность персональных данных в <a href="{{ Route('profile.settings') }}" class="text-decoration-underline">профиле</a>
+                                <div class="badge w-100 text-left" style="background:#ffff00;white-space:normal;line-height: 1.25;">
+                                    ВАЖНО! Сертификат придет на те данные (ФИО), которые указаны в твоем профиле. Проверь корректность персональных данных в <a href="{{ Route('profile.settings') }}" class="text-decoration-underline">профиле</a>
                                 </div>
                             </div>
                             <!-- Блок контента -->
@@ -55,8 +55,9 @@
 
                                     <!-- Заголовок блока опроса -->
                                     <div class="section-main-title">
-                                        Ты успешно завершил онлайн-курс проекта <br>
-                                        «{{ $course->name }}».
+                                        Поздравляем! Ты успешно завершил обучение на онлайн-курсе «{{ $course->name }}». <br>
+                                        Пришло время подводить итоги. <br>
+                                        Обратись к своей личной цели на курс, какие шаги уже сделаны, что намечено на перспективу. Методическое пособие <a href="https://disk.yandex.ru/i/ioUH8lUrDI7qTA" target="_blank">«{{ $course->name }}»</a> поможет тебе придерживаться плана развития лидерства.
                                     </div>
                                     <!-- Заголовок блока опроса -->
                                 </div>

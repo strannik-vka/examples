@@ -1,4 +1,4 @@
-import 'admined';
+import '../../../admined';
 
 Admined.page('post', 'Новости', {
     middleware: ['admin', 'applicationModer'],
@@ -1202,5 +1202,28 @@ Admined.page('OpinionAnswer', 'Мнения о курсе', {
             readonly: true,
             filter: 'readonly'
         }
+    ]
+});
+
+Admined.page('CoursePrice', 'Цены на курсы', {
+    middleware: 'admin',
+    parent: 'course',
+    form: [
+        {
+            name: 'id',
+            placeholder: 'ID',
+            center: true,
+            readonly: true
+        },
+        {
+            url: '/admin/course',
+            name: 'course_id',
+            placeholder: 'Курс',
+            type: 'select'
+        },
+        {
+            name: 'amount',
+            placeholder: 'Цена',
+        },
     ]
 });

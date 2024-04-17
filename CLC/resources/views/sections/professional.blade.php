@@ -3,19 +3,33 @@
     <div class="container">
         <div class="section-expert-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
             <h4>
-                @if(Route::is('courses.list.item'))
-                Преподаватели
+                @if(Route::is('courses.list.item') || Route::is('landing.reels'))
+                Кто будет <br>
+                тебя обучать
                 @else
                 Кто будет <br>
                 тебя обучать
                 @endif
             </h4>
-            @if(!Route::is('courses.list.item'))
+            @if(Route::is('courses.list.item') || Route::is('landing.reels'))
             <br>
             <p style="margin:0;">
                 Профессионалы креативного <br class="d-inline d-md-none">бизнеса, <br class="d-none d-md-inline">
                 которые реализовали <br class="d-inline d-md-none">десятки кейсов
             </p>
+            @if(Route::is('courses.list.item') || Route::is('landing.reels'))
+            <br>
+            <div class="row g-3">
+                <div class="col-auto">
+                    <a href="mailto:inbox@creative-leaders.ru?subject=Вопрос эксперту" class="btn btn-primary">Задать вопрос эксперту</a>
+                </div>
+                <div class=" col-auto">
+                    <button type="button" class="btn btn-primary" data-modal-open="requestMeeting">
+                        Отправить заявку на встречу
+                    </button>
+                </div>
+            </div>
+            @endif
             @endif
         </div>
     </div>

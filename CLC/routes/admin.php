@@ -20,6 +20,7 @@ Route::group([
     Route::group([
         'middleware' => 'admin'
     ], function () {
+        Route::resource('CoursePrice', 'CoursePriceController');
         Route::resource('course', 'CourseController');
         Route::resource('lesson', 'LessonController');
         Route::resource('test', 'TestController');

@@ -23,18 +23,16 @@
                                 </div>
                                 <div class="word-card-text wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
                                     <p class="fw-500">
-                                        Основатель центра развития <br>
-                                        креативных индустрий <br class="d-inline d-md-none">«Креативный путь» <br class="d-none d-md-inline">
+                                        Идеолог проекта и креативный лидер
                                     </p>
                                     <p class="fw-500">
-                                        Ex-исполнительный директор <br>
-                                        «Российской креативной недели» <br class="d-none d-md-inline">
+                                        Продюсер творческих проектов
                                     </p>
                                     <p class="fw-500">
-                                        Председатель комитета <br>
-                                        Российского книжного союза
+                                        Основатель и директор центра развития <br class="d-inline d-lg-none"> креативных <br class="d-none d-lg-inline">
+                                        индустрий «Креативный путь»
                                     </p>
-                                    <p class="fs-italic wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" style="margin-top: auto; margin-bottom: 0;">
+                                    <p class="fs-italic wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s" style="margin-top: 2rem; margin-bottom: 0;">
                                         «Во что веришь ты? <br>
                                         Я — в личность лидера. Его цели, принципы, <br class="d-none d-md-inline">
                                         ценности, выбор – все это составляет основу его <br class="d-none d-md-inline d-lg-none">бизнеса. <br class="d-none d-lg-inline">

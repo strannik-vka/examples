@@ -6,7 +6,8 @@
                     <div class="section-take-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
                         <h4>
                             Кто может <br>
-                            принять участие
+                            принимать участие <br>
+                            в конкурсе
                         </h4>
                     </div>
                 </div>

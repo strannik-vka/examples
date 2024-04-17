@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\BlockExpert;
 use App\Models\BlockProfessional;
+use App\Models\CoursePrice;
 use App\Models\PartnerCategory;
 use App\Models\User;
 use Illuminate\Auth\Notifications\ResetPassword;
@@ -54,5 +55,12 @@ class AppServiceProvider extends ServiceProvider
                 }
             ])->where('published', 1)->orderBy('sort', 'asc')->get());
         });
+
+        $Course1Price = CoursePrice::where('course_id', 1)->first();
+
+        View::share(
+            'course_1_price',
+            $Course1Price ? number_format($Course1Price->amount, 0, ',', ' ') : 0
+        );
     }
 }

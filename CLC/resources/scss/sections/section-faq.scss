@@ -1,0 +1,37 @@
+// sections
+@import "./section-program.scss";
+
+// primary
+@import "../parts/faq-item";
+
+.section-faq {
+    &-inner {
+        --bs-section-padding: 3.875rem;
+        padding: var(--bs-section-padding) 0;
+        @media (min-width: 1200px) {
+            --bs-section-padding: 6.875rem;
+        }
+    }
+    &-collapses {
+        --bs-section-content-padding: 3.75rem;
+        padding: var(--bs-section-content-padding) 0 0 0;
+        @media (min-wdith: 768px) {
+            --bs-section-content-padding: 5rem;
+        }
+        & > * {
+            &:last-of-type {
+                padding-bottom: unset;
+            }
+        }
+    }
+    &-action {
+        --bs-section-content-padding: 3.75rem;
+        padding-top: var(--bs-section-content-padding);
+        @media (min-wdith: 768px) {
+            --bs-section-content-padding: 5rem;
+        }
+        @media (min-width: 1200px) {
+            --bs-section-content-padding: 7.75rem;
+        }
+    }
+}

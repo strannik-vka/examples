@@ -51,9 +51,6 @@
                     <div class="col-12" style="display: none;" data-inputs-end-show>
                         <button class="btn btn-primary w-100">Войти</button>
                     </div>
-                    <div class="form-auth-footer text-center">
-                        Здесь впервые? <a href="{{ Route('register') }}">Зарегистрироваться</a>
-                    </div>
                 </div>
             </form>
         </div>

@@ -35,9 +35,9 @@
             </div>
             <div class="section-main-callback wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
                 @guest
-                <a href="{{ Route('register') }}?redirectUrl={{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-primary btn-wider w-xs-100">Начать обучение</a>
+                <a href="{{ Route('courses.list.item', ['id' => 1]) }}" target="_blank" class="btn btn-primary btn-wider w-xs-100">Начать обучение онлайн</a>
                 @else
-                <a href="{{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-primary btn-wider w-xs-100">Начать обучение</a>
+                <a href="{{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-primary btn-wider w-xs-100">Начать обучение онлайн</a>
                 @endif
             </div>
             <div class="section-main-background">
@@ -158,11 +158,11 @@
                         </div>
                         <div class="section-take-link d-none d-md-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
                             @guest
-                            <a href="{{ Route('register') }}" class="btn btn-white btn-wider w-xs-100 text-nowrap" target="_blank">
+                            <a href="{{ Route('courses.list.item', ['id' => 1]) }}" class="btn btn-white btn-wider w-xs-100 text-nowrap" target="_blank">
                                 Начать обучение
                             </a>
                             @else
-                            <a href="{{ Route('profile.settings') }}" class="btn btn-white btn-wider w-xs-100 text-nowrap" target="_blank">
+                            <a href="{{ Route('course.show', ['id' => 1]) }}" class="btn btn-white btn-wider w-xs-100 text-nowrap" target="_blank">
                                 Начать обучение
                             </a>
                             @endif
@@ -183,10 +183,10 @@
                                         </svg>
                                     </div>
                                     <div class="take-card-description">
-                                        Материалы <br class="d-inline d-lg-none">и экспертная <br>
-                                        поддержка от <br class="d-inline d-lg-none">профессионалов <br>
-                                        креативных индустрий <br class="d-inline d-lg-none">— им <br class="d-none d-lg-inline">
-                                        есть чем поделиться
+                                        Мотивация и экспертная <br class="d-none d-lg-inline">поддержка:
+                                        сопровождать <br class="d-none d-lg-inline">процесс обучения<br class="d-none d-lg-inline">
+                                        будут профессионалы<br class="d-none d-lg-inline">
+                                        креативного бизнеса
                                     </div>
                                 </div>
                             </div>
@@ -221,9 +221,8 @@
                                     <div class="take-card-description">
                                         Гибридный <br class="d-inline d-lg-none">формат <br class="d-none d-lg-inline">
                                         обучения: <br class="d-inline d-lg-none">очные интенсивы <br>
-                                        для победителей <br class="d-inline d-lg-none">конкурса <br class="d-none d-lg-inline">
-                                        и бесплатный <br class="d-inline d-lg-none">онлайн-курс <br class="d-none d-lg-inline">
-                                        для <br class="d-inline d-lg-none">ориентированных <br>
+                                        и онлайн-курс для<br class="d-none d-lg-inline">
+                                        ориентированных <br>
                                         на развитие
                                     </div>
                                 </div>
@@ -250,11 +249,11 @@
                 </div>
                 <div class="col-12 d-block d-md-none">
                     @guest
-                    <a href="{{ Route('register') }}" class="btn btn-white btn-wider w-xs-100 w-sm-100 text-nowrap" target="_blank">
+                    <a href="{{ Route('courses.list.item', ['id' => 1]) }}" class="btn btn-white btn-wider w-xs-100 w-sm-100 text-nowrap" target="_blank">
                         Начать обучение
                     </a>
                     @else
-                    <a href="{{ Route('profile.settings') }}" class="btn btn-white btn-wider w-xs-100 w-sm-100 text-nowrap" target="_blank">
+                    <a href="{{ Route('course.show', ['id' => 1]) }}" class="btn btn-white btn-wider w-xs-100 w-sm-100 text-nowrap" target="_blank">
                         Начать обучение
                     </a>
                     @endif
@@ -264,7 +263,134 @@
     </div>
 </section>
 
-@include('sections.professional')
+<section class="section section-content section-result">
+    <div class="container">
+        <div class="section-result-inner">
+            <div class="row">
+                <div class="col-12 col-md-auto col-lg">
+                    <div class="section-result-left">
+                        <div class="section-result-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                            <h4>
+                                В результате <br>
+                                обучения ты:
+                            </h4>
+                        </div>
+                        <div class="section-result-link d-none d-md-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                            @guest
+                            <a href="{{ Route('courses.list.item', ['id' => 1]) }}" target="_blank" class="btn btn-dark btn-wider w-xs-100 text-nowrap">Начать обучение</a>
+                            @else
+                            <a href="{{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-dark btn-wider w-xs-100 text-nowrap">Начать обучение</a>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md col-lg-auto">
+                    <div class="section-result-cards">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="result-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                                    <div class="result-card-icon">
+                                        1
+                                    </div>
+                                    <div class="result-card-description">
+                                        Создашь свой <br class="d-inline d-xl-none">профиль <br class="d-none d-xl-inline">
+                                        креативного <br class="d-inline d-xl-none">лидера, <br class="d-none d-xl-inline">
+                                        сформируешь <br class="d-inline d-xl-none">план изменений <br>
+                                        и начнешь его <br class="d-inline d-xl-none">реализацию
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="result-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <div class="result-card-icon">
+                                        2
+                                    </div>
+                                    <div class="result-card-description">
+                                        Сформируешь <br class="d-inline d-xl-none">навык <br class="d-none d-xl-inline">
+                                        по <br class="d-inline d-xl-none">расширению <br class="d-inline d-xl-none">видения, <br>
+                                        позволяющий <br class="d-inline d-xl-none">смотреть <br>
+                                        на все как <br class="d-inline d-xl-none">на потенциал
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="result-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                                    <div class="result-card-icon">
+                                        3
+                                    </div>
+                                    <div class="result-card-description">
+                                        Создашь или <br>
+                                        трансформируешь <br>
+                                        уникальность своего <br class="d-inline d-xl-none">дела <br class="d-none d-xl-inline">
+                                        (проекта или <br class="d-inline d-xl-none">бизнеса)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="result-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                                    <div class="result-card-icon">
+                                        4
+                                    </div>
+                                    <div class="result-card-description">
+                                        Создашь <br>
+                                        корпоративный <br>
+                                        кодекс своей <br>
+                                        организации
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="result-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                                    <div class="result-card-icon">
+                                        5
+                                    </div>
+                                    <div class="result-card-description">
+                                        Скорректируешь <br class="d-inline d-xl-none">процессы <br>
+                                        с применением <br class="d-inline d-xl-none">инструментов <br>
+                                        дизайн-мышления <br class="d-inline d-xl-none">для <br class="d-none d-xl-inline">
+                                        повышения <br class="d-inline d-xl-none">их эффективности
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="result-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                                    <div class="result-card-icon">
+                                        6
+                                    </div>
+                                    <div class="result-card-description">
+                                        Усилишь свои <br>
+                                        коммуникативные <br class="d-inline d-xl-none">навыки <br class="d-none d-xl-inline">
+                                        и внедришь <br class="d-inline d-xl-none">во взаимодействие <br>
+                                        с командой новые <br class="d-inline d-xl-none">практики
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="result-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
+                                    <div class="result-card-icon">
+                                        7
+                                    </div>
+                                    <div class="result-card-description">
+                                        Сможешь использовать реальный опыт <br class="d-inline d-xl-none">креативных предпринимателей, <br class="d-none d-xl-inline">
+                                        узнаешь их <br class="d-inline d-xl-none">ценности и практики, встретишь интересные <br class="d-inline d-xl-none">идеи, которые <br class="d-none d-xl-inline">
+                                        сможешь интегрировать <br class="d-inline d-xl-none">в свой лидерский путь
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-block d-md-none">
+                    @guest
+                    <a href="{{ Route('courses.list.item', ['id' => 1]) }}" target="_blank" class="btn btn-white btn-wider w-xs-100 text-nowrap">Начать обучение</a>
+                    @else
+                    <a href="{{ Route('course.show', ['id' => 1]) }}" target="_blank" class="btn btn-white btn-wider w-xs-100 text-nowrap">Начать обучение</a>
+                    @endif
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Карточка курса -->
 <section class="section section-content section-courseblock">
@@ -277,6 +403,18 @@
 
 @include('post.block')
 
+@include('sections.recommendations.block')
+
+@include('sections.partners')
+@endsection
+
+@section('modals')
+@include('sections.recommendations.modal')
+@endsection
+
+@section('hints')
+@include('sections.recommendations.book', ['bookFilter' => true])
+@include('sections.recommendations.film', ['filmFilter' => true])
 @endsection
 
 @section('scripts')

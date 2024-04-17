@@ -50,6 +50,8 @@ const modalHelpers = {
 
         modal.removeClass('show');
         modal.trigger('hidden');
+
+        history.pushState(null, null, location.pathname);
     }
 
 }

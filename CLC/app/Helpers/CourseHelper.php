@@ -9,6 +9,7 @@ use App\Models\Lesson;
 use App\Models\Notification;
 use App\Models\User;
 use Exception;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 

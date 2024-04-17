@@ -29,9 +29,6 @@
                         <a href="{{ Route('index') }}" class="nav-header-link">Главная</a>
                     </div>
                     <div class="col-auto">
-                        <a href="{{ Route('about') }}" class="nav-header-link">О проекте</a>
-                    </div>
-                    <div class="col-auto">
                         <a href="{{ Route('courses.list.item', ['id' => 1]) }}" class="nav-header-link">О курсе</a>
                     </div>
                     <div class="col-auto">

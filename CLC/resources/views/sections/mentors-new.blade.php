@@ -1,4 +1,4 @@
-<section class="section section-content section-mentors">
+<section class="section section-content section-mentors" id="mentors" data-scroll-center>
     <div class="container">
         <div class="section-mentors-inner">
             <div class="section-mentors-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
@@ -8,7 +8,7 @@
                 </h4>
             </div>
             <div class="section-mentors-subtitle">
-                <div class="row">
+                <div class="row align-items-md-start">
                     <div class="col-12 col-md-auto d-none d-md-block">
                         <div class="section-mentors-figure">
                             <div class="section-mentors-icon infiniteStepRotation"></div>
@@ -19,6 +19,9 @@
                             «Мы работаем над тем, чтобы <br class="d-inline d-md-none"> навыки осознанного лидерства <br class="d-inline d-md-none">и креативной <br class="d-none d-md-inline">
                             трансформации <br class="d-inline d-md-none"> бизнеса были триггером <br class="d-inline d-md-none"> финансового роста <br class="d-inline d-md-none"> вашего бизнеса»
                         </p>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <a href="javascript://" class="btn btn-primary" data-modal-open="requestMentor">Оставить заявку на наставничество</a>
                     </div>
                 </div>
             </div>

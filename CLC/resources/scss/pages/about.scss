@@ -22,7 +22,8 @@
     min-height: 100vh;
     min-height: 100svh;
     // min-height: 41.5625rem;
-    padding: calc(var(--section-padding-top) / 5) 0 var(--section-padding-bottom);
+    padding: calc(var(--section-padding-top) / 5) 0
+        var(--section-padding-bottom);
     overflow: hidden;
     @media (min-width: 768px) {
         --section-padding-top: 7.5rem;

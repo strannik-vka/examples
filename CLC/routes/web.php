@@ -6,13 +6,17 @@ use App\Http\Controllers\Course\OpinionAnswerController;
 use App\Http\Controllers\Course\OpinionController;
 use App\Http\Controllers\Course\TestAnswerController;
 use App\Http\Controllers\EvaluationController;
+use App\Http\Controllers\FormMeetingController;
+use App\Http\Controllers\FormMentorController;
 use App\Http\Controllers\LeadersCompetitionController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\MeetingController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\Profile\SettingsController;
 use App\Http\Controllers\OpinionsController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\RecommendationController;
+use App\Http\Controllers\ReelsController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\SubscribeController;
 use Illuminate\Support\Facades\Route;
@@ -41,7 +45,7 @@ Route::get('/auth/confirm-profile', function () {
 })->name('auth.confirm-profile');
 
 Route::get('/about', function () {
-    return view('about');
+    return redirect(Route('index'), 302);
 })->name('about');
 
 Route::get('/leadership-contest', function () {
@@ -51,6 +55,10 @@ Route::get('/leadership-contest', function () {
 Route::get('/leadership-contest-result', function () {
     dd('Итоги конкурса');
 })->name('leadership.contest.result');
+
+// landing
+Route::get('/reels-course', [ReelsController::class, 'index'])->name('landing.reels');
+
 
 // agreement
 Route::get('/agreement/data', function () {
@@ -93,6 +101,9 @@ Route::group([
     Route::get('/process', [EvaluationController::class, 'process'])->name('process');
 });
 
+Route::post('/form/meeting', [FormMeetingController::class, 'store'])->name('form.meeting.store');
+Route::post('/form/mentor', [FormMentorController::class, 'store'])->name('form.mentor.store');
+
 Route::post('/subscribe/store', [SubscribeController::class, 'store'])->name('subscribe.store');
 
 Route::get('/unsubscribe', [SubscribeController::class, 'unsubscribe'])->name('mailing.unsubscribe');
@@ -126,7 +137,7 @@ Route::middleware('auth')->group(
 );
 
 Route::get('/faq', function () {
-    return view('faq.index');
+    return redirect(Route('courses.list.item', ['id' => 1, '#faq']), 302);
 })->name('faq.index');
 
 Route::get('/courses/list/{id}', function ($id) {
@@ -152,6 +163,10 @@ Route::get('/search', [SearchController::class, 'index'])
 
 Route::get('/recommendation/show', [RecommendationController::class, 'show'])->name('recommendation.show');
 Route::get('/opinions/show', [OpinionsController::class, 'show'])->name('opinions.show');
+
+Route::post('/payment/store', [
+    PaymentController::class, 'store'
+])->name('payment.store');
 
 require __DIR__ . '/auth.php';
 require __DIR__ . '/admin.php';

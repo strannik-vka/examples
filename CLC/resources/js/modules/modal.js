@@ -17,3 +17,14 @@ $.fn.extend({
         }
     }
 });
+
+// Открытие модалки по URL
+const urlModal = URLParam('modal');
+
+if (urlModal) {
+    const modalElem = $('[data-modal-id="' + urlModal + '"]');
+
+    if (modalElem.length) {
+        modalHelpers.show(modalElem);
+    }
+}

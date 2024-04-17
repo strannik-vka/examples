@@ -29,11 +29,20 @@
                 </div>
             </div>
             <div class="section-join-button wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                @guest
-                <a href="{{ Route('register') }}" target="_blank" class="btn btn-white btn-wider w-xs-100 w-sm-100 w-md-auto">Присоединиться</a>
-                @else
-                <a href="{{ Route('profile.settings') }}" target="_blank" class="btn btn-white btn-wider w-xs-100 w-sm-100 w-md-auto">Присоединиться</a>
-                @endif
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="h-4">
+                            цена: {{ $course_1_price }} рублей
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        @guest
+                        <a href="{{ Route('courses.list.item', ['id' => 1]) }}" target="_blank" class="btn btn-white btn-wider w-xs-100 w-sm-100 w-md-auto">Начать обучение</a>
+                        @else
+                        <a href="{{ Route('profile.settings') }}" target="_blank" class="btn btn-white btn-wider w-xs-100 w-sm-100 w-md-auto">Присоединиться</a>
+                        @endif
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -6,13 +6,15 @@ $itemBookFilters = [
 ['id' => 1, 'name' => 'Книги для развития креативности'],
 ['id' => 2, 'name' => 'Книги по теме организационной <br>идеологии и построению корпоративной <br>культуры'],
 ['id' => 3, 'name' => 'Книги по теме дизайн-мышления: <br>научиться широко мыслить <br>и решать задачи креативно'],
-['id' => 4, 'name' => 'Книги про маркетинг и стратегию бизнеса']
+['id' => 4, 'name' => 'Книги про маркетинг и стратегию бизнеса'],
+['id' => 5, 'name' => 'Книги по теме построения «бирюзовой организации»'],
+['id' => 6, 'name' => 'Книги для продюсера'],
 ]
 ];
 @endphp
 
 @if(isset($book))
-<div class="book-item" @if($itemBook==1 || $itemBook==2 || $itemBook==3 || $itemBook==4 || $itemBook==5 || $itemBook==6 || $itemBook==7 || $itemBook==8 || $itemBook==9) data-book-type="book_type:1" @endif @if($itemBook==10 || $itemBook==11 || $itemBook==12 || $itemBook==13 || $itemBook==14) data-book-type="book_type:2" @endif @if($itemBook==15 || $itemBook==16 || $itemBook==17 || $itemBook==18 || $itemBook==19 || $itemBook==20) data-book-type="book_type:3" @endif @if($itemBook==21 || $itemBook==22 || $itemBook==23 || $itemBook==24 || $itemBook==25 || $itemBook==26 || $itemBook==27) data-book-type="book_type:4" @endif>
+<div class="book-item" @if($itemBook==1 || $itemBook==2 || $itemBook==3 || $itemBook==4 || $itemBook==5 || $itemBook==6 || $itemBook==7 || $itemBook==8 || $itemBook==9) data-book-type="book_type:1" @endif @if($itemBook==10 || $itemBook==11 || $itemBook==12 || $itemBook==13 || $itemBook==14) data-book-type="book_type:2" @endif @if($itemBook==15 || $itemBook==16 || $itemBook==17 || $itemBook==18 || $itemBook==19 || $itemBook==20) data-book-type="book_type:3" @endif @if($itemBook==21 || $itemBook==22 || $itemBook==23 || $itemBook==24 || $itemBook==25 || $itemBook==26 || $itemBook==27) data-book-type="book_type:4" @endif @if($itemBook==28 || $itemBook==29 || $itemBook==30 || $itemBook==31) data-book-type="book_type:5" @endif @if($itemBook==32 || $itemBook==33 || $itemBook==34 || $itemBook==35 || $itemBook==36 || $itemBook==37) data-book-type="book_type:6" @endif>
     <a href="javascript://" class="stretched-link" data-rec-open></a>
     <div class="row">
         <div class="col-12 col-md-auto" data-image>
@@ -108,6 +110,36 @@ $itemBookFilters = [
                             @if($itemBook == 27)
                             «Лидер есть в каждом. Племена в эпоху социальных сетей»
                             @endif
+                            @if($itemBook == 28)
+                            Открывая организации будущего
+                            @endif
+                            @if($itemBook == 29)
+                            Лидер и племя
+                            @endif
+                            @if($itemBook == 30)
+                            ВкусВилл. Как совершить революцию в ритейле, делая всё не так
+                            @endif
+                            @if($itemBook == 31)
+                            Чайка по имени Джонатан Ливингстон
+                            @endif
+                            @if($itemBook == 32)
+                            Sapiens. Краткая история человечества
+                            @endif
+                            @if($itemBook == 33)
+                            Креативная компания. Как управлять командой творческих людей. Том 56
+                            @endif
+                            @if($itemBook == 34)
+                            Rework. Бизнес без предрассудков
+                            @endif
+                            @if($itemBook == 35)
+                            Моя жизнь. Мои достижения
+                            @endif
+                            @if($itemBook == 36)
+                            Как это делается: продюсирование в креативных индустриях
+                            @endif
+                            @if($itemBook == 37)
+                            Выходит продюсер
+                            @endif
                         </div>
                     </div>
                     <div class="col-12">
@@ -192,6 +224,36 @@ $itemBookFilters = [
                             @endif
                             @if($itemBook == 27)
                             Сет Годин
+                            @endif
+                            @if($itemBook == 28)
+                            Фредерик Лалу
+                            @endif
+                            @if($itemBook == 29)
+                            Джон Кинг, Дэйв Логан, Хэли Фишер-Райт
+                            @endif
+                            @if($itemBook == 30)
+                            Евгений Щепин
+                            @endif
+                            @if($itemBook == 31)
+                            Ричард Бах
+                            @endif
+                            @if($itemBook == 32)
+                            Юваль Ной Харари
+                            @endif
+                            @if($itemBook == 33)
+                            Эд Кэтмелл, Эми Уоллес
+                            @endif
+                            @if($itemBook == 34)
+                            Джейсон Фрайд, Дэвид Хайнемайер Хенссон
+                            @endif
+                            @if($itemBook == 35)
+                            Генри Форд
+                            @endif
+                            @if($itemBook == 36)
+                            Коллектив авторов
+                            @endif
+                            @if($itemBook == 37)
+                            Александр Роднянский
                             @endif
                         </div>
                     </div>
@@ -338,6 +400,43 @@ $itemBookFilters = [
                             стать лидером каждому человеку. Великий и ужасный гуру маркетинга Сет Годин на
                             примерах из реальной жизни и бизнеса демонстрирует читателям, почему именно сейчас
                             стать лидером и возглавить собственное племя стало проще, чем когда-либо ранее.
+                            @endif
+                            @if($itemBook == 28)
+                            Какими станут организации будущего, построенные на абсолютно иных принципах – цельными, самоуправляемыми и эволюционными.
+                            @endif
+                            @if($itemBook == 29)
+                            Книга поможет создать в компании сильную корпоративную культуру, даже если
+                            изначально та была агрессивной и разрушительной.
+                            @endif
+                            @if($itemBook == 30)
+                            Честный рассказ об успехах и провалах компании, о планах и ожиданиях, об отношении к сотрудникам и покупателям и, конечно, о людях, без которых «ВкусВилл» никогда бы не стал таким, каким мы знаем его сегодня.
+                            @endif
+                            @if($itemBook == 31)
+                            Для вдохновения и «окрыления»!
+                            История для тех, кто следует зову своего сердца и устанавливает свои собственные
+                            правила, кто знает, что в жизни есть нечто большее, чем видят наши глаза.
+                            @endif
+                            @if($itemBook == 32)
+                            Книга поможет получить фундаментальную информацию и понять законы развития
+                            общества.Изучаем прошлое, предугадываем и планируем будущее.
+                            @endif
+                            @if($itemBook == 33)
+                            Как объединить творчество и менеджмент? Как выпускать лучший в отрасли продукт и
+                            приносить прибыль компании?
+                            @endif
+                            @if($itemBook == 34)
+                            О том, как начать свой бизнес. Если хотите – параллельно с основной работой. О том, как усовершенствовать имеющийся бизнес, а точнее – ваши взгляды на него. С тем, чтобы обрести невиданную ранее степень свободы.
+                            @endif
+                            @if($itemBook == 35)
+                            Идеи и методы, описанные в книге, внедрены в деятельность тысяч предприятий и
+                            заслуживают внимания каждого человека, организующего свой бизнес.
+                            @endif
+                            @if($itemBook == 36)
+                            Что такое зрелищные «аттракционы» и «трансмедиа», как меняется поведение аудитории в цифровую эпоху и почему телевидение – не только бизнес.
+                            @endif
+                            @if($itemBook == 37)
+                            Одна большая идея – продюсер влияет на сознание миллионов. Много личного опыта и полезных наблюдений – как собрать проект из кусочков, как управлять творческими
+                            людьми, как работать со скоростью и качеством Голливуда.
                             @endif
                         </div>
                     </div>

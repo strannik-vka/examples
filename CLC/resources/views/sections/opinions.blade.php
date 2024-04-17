@@ -3,7 +3,7 @@ $itemOpinion = isset($itemOpinion) ? $itemOpinion : 1;
 @endphp
 
 @if(isset($opinion))
-<section class="section section-content section-opinions">
+<section class="section section-content section-opinions" id="opinions">
     <div class="container">
         <div class="section-opinions-inner">
             <div class="section-opinions-title text-center d-none d-md-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">

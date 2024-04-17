@@ -5,7 +5,8 @@
     --bs-modal-padding: var(--bs-modal-padding-y) var(--bs-modal-padding-x);
     --bs-modal-padding-y: 3rem;
     --bs-modal-padding-x: 2rem;
-    --bs-modal-body-padding: var(--bs-modal-body-padding-y) var(--bs-modal-body-padding-x);
+    --bs-modal-body-padding: var(--bs-modal-body-padding-y)
+        var(--bs-modal-body-padding-x);
     --bs-modal-body-padding-y: 1.5625rem;
     --bs-modal-body-padding-x: 0;
     --bs-modal-zindex: 1050;
@@ -130,7 +131,8 @@
         & .modal-content {
             --bs-modal-padding-y: 0.9375rem;
             --bs-modal-padding-x: 0.9375rem;
-            --bs-modal-padding: var(--bs-modal-padding-y) var(--bs-modal-padding-x);
+            --bs-modal-padding: var(--bs-modal-padding-y)
+                var(--bs-modal-padding-x);
             @media (min-width: 1200px) {
                 --bs-modal-padding-y: 1.5625rem;
                 --bs-modal-padding-x: 1.5625rem;
@@ -140,6 +142,11 @@
     &-readmore {
         & .modal-content {
             max-width: 62.5rem;
+        }
+    }
+    &-request {
+        & .modal-content {
+            max-width: 42.5rem;
         }
     }
     &-author {
@@ -226,7 +233,8 @@
         & .modal-content {
             --bs-modal-padding-y: 0.9375rem;
             --bs-modal-padding-x: 0.9375rem;
-            --bs-modal-padding: var(--bs-modal-padding-y) var(--bs-modal-padding-x) calc(var(--bs-modal-padding-y) * 2);
+            --bs-modal-padding: var(--bs-modal-padding-y)
+                var(--bs-modal-padding-x) calc(var(--bs-modal-padding-y) * 2);
             min-width: 22rem;
             @media (min-width: 768px) {
                 max-width: 44rem;
@@ -278,7 +286,8 @@
         & .modal-content {
             --bs-modal-padding-y: 0.9375rem;
             --bs-modal-padding-x: 0.9375rem;
-            --bs-modal-padding: var(--bs-modal-padding-y) var(--bs-modal-padding-x) calc(var(--bs-modal-padding-y) * 2);
+            --bs-modal-padding: var(--bs-modal-padding-y)
+                var(--bs-modal-padding-x) calc(var(--bs-modal-padding-y) * 2);
             min-width: 22rem;
             @media (min-width: 768px) {
                 max-width: 44rem;
@@ -374,14 +383,16 @@
         & .modal-content {
             --bs-modal-padding-y: 2.19rem;
             --bs-modal-padding-x: 0.75rem;
-            --bs-modal-padding: var(--bs-modal-padding-y) var(--bs-modal-padding-x);
+            --bs-modal-padding: var(--bs-modal-padding-y)
+                var(--bs-modal-padding-x);
             min-width: 22rem;
             @media (min-width: 768px) {
                 max-width: 39.75rem;
                 min-width: 39.75rem;
                 --bs-modal-padding-y: 1.44rem;
                 --bs-modal-padding-x: 4.06rem;
-                --bs-modal-padding: var(--bs-modal-padding-y) var(--bs-modal-padding-x) var(--bs-modal-padding-y) 0;
+                --bs-modal-padding: var(--bs-modal-padding-y)
+                    var(--bs-modal-padding-x) var(--bs-modal-padding-y) 0;
             }
         }
         &-cover {
@@ -450,6 +461,49 @@
             opacity: 0.5;
             @media (min-width: 768px) {
                 text-align: left;
+            }
+        }
+    }
+    &-payment {
+        & .modal-content {
+            @media (min-width: 768px) {
+                max-width: 34.313rem;
+                min-width: 30.313rem;
+            }
+        }
+        & .modal-title {
+            padding: unset;
+            text-align: left;
+        }
+        & .modal-body {
+            @media (min-width: 768px) {
+                padding-left: 2.25rem;
+                padding-right: 2.25rem;
+            }
+        }
+        & .modal-footer {
+            padding: var(--bs-modal-body-padding-y) 0 0 0;
+        }
+    }
+    &-certificate {
+        @media screen and (max-width: 767.98px) {
+            --bs-modal-padding: 1.5rem;
+        }
+        & .modal-content {
+            max-width: 38.75rem;
+        }
+        &-cover {
+            position: relative;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border-radius: 0;
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
     }
